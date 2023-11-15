@@ -146,7 +146,7 @@ def menu_NovaVita2():
                                 unidade_sensor = "bpm"
                             elif sensor_name == 'pressao':
                                 sensor_nome_dash = "Pressão Arterial"
-                                unidade_sensor = "mmmHg"
+                                unidade_sensor = "mmHg"
 
                             print()
                             print(f"\033[34mÚltimas {quantidade_leituras} leituras de {sensor_nome_dash}:\033[m")
