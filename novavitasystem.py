@@ -26,12 +26,21 @@ def aleatorio_nome_agendamento():
     randomagendamento = random.choice(agendamentos)
     return randomagendamento
 
-def criar_grafico(sensor_escolhido, dados_sensor, quantidade_desejada):
+def medicamento_aleatorio():
+    medicamentos = ["Tomar medicamento de 12 em 12 horas", "Tomar remédio a cada 24 horas", "Tomar remédio de 6 em 6 horas", "Tomar remédio a cada 48 horas", "Tomar remédio a cada 2 horas", "Tomar medicamento a cada 1 semana", "Tomar medicamento a cada 2 semanas", "Tomar remédio a cada 3 dias", "Tomar medicamento uma vez ao mês", "Tomar medicamento a cada 2 meses"]
+    medicamentos_aleatorios = random.sample(medicamentos, 3)
+    return medicamentos_aleatorios
+
+def criar_grafico(sensor_escolhido, tempos, dados_sensor, quantidade_desejada):
+    # Converter tempos para o formato de datetime
+    tempos_formatados = [datetime.strptime(t, "%Y-%m-%dT%H:%M:%S.%fZ") for t in tempos]
+    
     # Criando um gráfico simples
-    plt.plot(dados_sensor)
-    plt.xlabel("Amostras")
+    plt.plot(tempos_formatados, dados_sensor)
+    plt.xlabel("Tempo")
     plt.ylabel(sensor_escolhido)
     plt.title(f"Últimos {quantidade_desejada} valores do sensor {sensor_escolhido}")
+    plt.xticks(rotation=45)
     plt.show()
 
 
@@ -84,12 +93,13 @@ def menu_NovaVita2():
                         print(f'\033[33mSeja bem vindo(a) {dic["nome"]}!\033[m\n')
             print('1 - Ver a última atualização do Soul')
             print('2 - Ver monitoramento')
-            print('3 - Ver agendamentos')
-            print('4 - Adicionar agendamento')
-            print('5 - Desmarcar agendamento')
-            print('6 - Suporte especializado - dúvidas e perguntas')
-            print('7 - Mostrar todas as operações realizadas')
-            print('8 - Log-out\n')
+            print('3 - Ver lembretes')
+            print('4 - Ver agendamentos')
+            print('5 - Adicionar agendamento')
+            print('6 - Desmarcar agendamento')
+            print('7 - Suporte especializado - dúvidas e perguntas')
+            print('8 - Mostrar todas as operações realizadas')
+            print('9 - Log-out\n')
             print('----------------------------------------------\n')
 
             escolha_menu2_input = input("Escolha uma dessas opções: ")
@@ -180,11 +190,11 @@ def menu_NovaVita2():
                                 
                                 
                             dados_sensor = [entry["attrValue"] for entry in sensor_values if entry["attrName"] == sensor_name]
+                            tempos = [entry["recvTime"] for entry in sensor_values if entry["attrName"] == sensor_name]
                             dados_sensor = dados_sensor[-quantidade_leituras:]
-
-                            print()
-                            print(f"\033[34mÚltimas {quantidade_leituras} leituras de {sensor_nome_dash}:\033[m")
-                            print()
+                            tempos = tempos[-quantidade_leituras:]
+                            
+                            print(f"\n\033[34mÚltimas {quantidade_leituras} leituras de {sensor_nome_dash}:\033[m\n")
                             
                             for value in sensor_values[-quantidade_leituras:]:
                                 valores = value['attrValue']
@@ -193,10 +203,24 @@ def menu_NovaVita2():
                                 print(f"{valores} {unidade_sensor} - {data_hora_formatados}")
                                 print()
                                 
-                            criar_grafico(sensor_nome_dash, dados_sensor, quantidade_leituras)
+                            criar_grafico(sensor_nome_dash, tempos, dados_sensor, quantidade_leituras)
                             
                         lista.append('Ver monitoramento')
                 case 3:
+                    if os.path.exists(CADASTRO_JSON) and dados_cliente:
+                        for datas in dados_cliente:
+                            if datas["e-mail"] == email:
+                                if datas["lembretes"]:
+                                    print('\n\033[34mSeus lembretes:\033[m\n')
+                                    lista.append('Ver lembretes')
+                                    for lembrete in datas["lembretes"]:
+                                        print(lembrete)
+                                    print()
+                                else:
+                                    print('\n\033[31mNão existem lembretes!\033[m\n')
+                    else:
+                        print('\033[31mNão existe nenhum cadastro no banco de dados!\033[m\n')
+                case 4:
                     if os.path.exists(CADASTRO_JSON) and dados_cliente:
                         for datas in dados_cliente:
                             if datas["e-mail"] == email:
@@ -210,7 +234,7 @@ def menu_NovaVita2():
                                     print('\n\033[31mNão existem agendamentos!\033[m\n')
                     else:
                         print('\033[31mNão existe nenhum cadastro no banco de dados!\033[m\n')
-                case 4:
+                case 5:
                     if os.path.exists(CADASTRO_JSON) and dados_cliente:
                         for datas in dados_cliente:
                             if datas["e-mail"] == email:
@@ -231,7 +255,7 @@ def menu_NovaVita2():
                                     json.dump(dados_cliente, arquivo, indent=4, ensure_ascii=False)
                     else:
                         print('\033[31mNão existe nenhum cadastro no banco de dados!\033[m\n')
-                case 5:
+                case 6:
                     if os.path.exists(CADASTRO_JSON) and dados_cliente:
                         for datas in dados_cliente:
                             if datas["e-mail"] == email:
@@ -256,7 +280,7 @@ def menu_NovaVita2():
                                     print('\n\033[31mPor favor, digite um número válido!\033[m\n')
                     else:
                         print('Não existem agendamentos!')
-                case 6:
+                case 7:
                     if os.path.exists(DUVIDAS_JSON):
                         with open(DUVIDAS_JSON, 'r', encoding='utf-8') as arquivoduvidas:
                             duvidas_existente = json.load(arquivoduvidas)
@@ -294,7 +318,7 @@ def menu_NovaVita2():
                         except ValueError:
                             print("\nDigite um número inteiro válido.")
                         print()
-                case 7:
+                case 8:
                     try:
                         print()
                         resposta = input("Deseja ver o resumo de operações realizadas do menu? (sim/não): ").lower()
@@ -331,7 +355,7 @@ def menu_NovaVita2():
                 case _:             
                     print("\n\033[31mError!! Número inválido!\033[m \n")
         except ValueError:
-            print("\n\033[31mDigite um número inteiro válido entre 1 e 8!\033[m\n")
+            print("\n\033[31mDigite um número inteiro válido entre 1 e 9!\033[m\n")
 
 while True:
     escolha_menu1 = menu_NovaVita1() 
@@ -389,7 +413,7 @@ while True:
                 if email_existente == True:
                     print("\n\033[31mEste email já está cadastrado! Tente com um email diferente.\033[m\n")
                 else:
-                    cadastro = {'nome': nome, 'e-mail': email, 'senha': senha, 'agendamentos': [str(aleatorio_data()) + " " + aleatorio_nome_agendamento(), str(aleatorio_data()) + " " + aleatorio_nome_agendamento(), str(aleatorio_data()) + " " + aleatorio_nome_agendamento()]}
+                    cadastro = {'nome': nome, 'e-mail': email, 'senha': senha, 'agendamentos': [str(aleatorio_data()) + " " + aleatorio_nome_agendamento(), str(aleatorio_data()) + " " + aleatorio_nome_agendamento(), str(aleatorio_data()) + " " + aleatorio_nome_agendamento()], 'lembretes': medicamento_aleatorio()}
                     lista_cadastro.append(cadastro)
                     print('\n\033[32mCadastro realizado com sucesso!\033[m\n')
                     lista.append("Cadastro no site do NovaVita")

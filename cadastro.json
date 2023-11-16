@@ -1,40 +1,33 @@
 [
     {
+        "nome": "rony",
+        "e-mail": "rony@gmail.com",
+        "senha": "12345678",
+        "agendamentos": [
+            "02/12/2024 Otorrinolaringologista",
+            "26/02/2024 Cardiograma",
+            "16/02/2024 Dentista"
+        ],
+        "lembretes": [
+            "Tomar medicamento a cada 2 semanas",
+            "Tomar medicamento a cada 1 semana",
+            "Tomar medicamento uma vez ao mês"
+        ]
+    },
+    {
         "nome": "a",
         "e-mail": "a@gmail.com",
         "senha": "12345678",
         "agendamentos": [
-            "20/10/2024 Dentista"
-        ]
-    },
-    {
-        "nome": "g",
-        "e-mail": "g@gmail.com",
-        "senha": "12345678",
-        "agendamentos": [
-            "12/01/2024 Otorrinolaringologista",
-            "11/01/2024 Oftalmologista",
-            "04/01/2024 Oftalmologista"
-        ]
-    },
-    {
-        "nome": "d",
-        "e-mail": "d@gmail.com",
-        "senha": "12345678",
-        "agendamentos": [
-            "16/10/2024 Dentista",
-            "01/05/2024 Otorrinolaringologista",
-            "22/03/2024 Cardiograma"
-        ]
-    },
-    {
-        "nome": "asda",
-        "e-mail": "aaa@gmail.com",
-        "senha": "12345678",
-        "agendamentos": [
-            "18/02/2024 Oftalmologista",
-            "04/07/2024 Oftalmologista",
-            "16/05/2024 Otorrinolaringologista"
+            "25/05/2024 Otorrinolaringologista",
+            "29/05/2024 Dentista",
+            "02/05/2024 Oftalmologista",
+            "20/11/2024 Cardiologista"
+        ],
+        "lembretes": [
+            "Tomar medicamento a cada 2 semanas",
+            "Tomar remédio a cada 48 horas",
+            "Tomar medicamento a cada 1 semana"
         ]
     }
 ]
