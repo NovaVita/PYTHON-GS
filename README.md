@@ -32,6 +32,41 @@ Além disso, em um mundo cada vez mais conectado, há uma demanda crescente por 
 
 ---
 
+## **Objetivo**
+
+A NovaVita se compromete a impactar positivamente vidas, oferecendo uma abordagem inovadora que prioriza a prevenção, agilidade no tratamento e uma experiência de cuidado centrada no paciente. Esperamos que o NovaVita App e o dispositivo Soul possam beneficiar comunidades inteiras, proporcionando um cuidado de saúde mais eficiente e acessível. A NovaVita está dedicada a contribuir para a saúde global e proporcionar um futuro onde as pessoas possam viver vidas mais saudáveis e conectadas.
+
+---
+
+## **Solução**
+
+A NovaVita se propõe a revolucionar a prestação de cuidados de saúde, abordando as lacunas existentes na gestão de condições médicas e promovendo uma abordagem mais holística e orientada para o paciente. A solução proposta envolve dois elementos principais: o aplicativo NovaVita e o dispositivo de monitoramento Soul.
+
+### **Aplicativo NovaVita:**
+
+O NovaVita App é uma plataforma abrangente que oferece funcionalidades avançadas para pacientes e profissionais de saúde. Ele aborda os seguintes aspectos:
+
+* **Agendamento Automático de Consultas:** Automatiza o processo de agendamento de consultas, proporcionando conveniência tanto para os pacientes quanto para os profissionais de saúde.
+* **Monitoramento do Paciente em Tempo Real:** Rastreia e apresenta dados relevantes, permitindo que profissionais de saúde monitorem o progresso dos pacientes e identifiquem rapidamente qualquer agravamento.
+* **Gestão de Medicamentos:** Facilita a adesão consistente aos medicamentos, enviando lembretes e monitorando a conformidade para melhorar os resultados do tratamento.
+* **Resposta Automática a Agravamentos:** Em caso de agravamento detectado, o aplicativo é capaz de agendar automaticamente uma consulta, proporcionando uma resposta rápida a emergências médicas.
+
+### **Dispositivo Soul:**
+
+O Soul é um dispositivo de monitoramento de saúde que se integra perfeitamente ao aplicativo NovaVita. Suas características incluem:
+
+* **Sensores Avançados:** Infravermelho, batimento cardíaco, pressão arterial e oxigenação do sangue para fornecer uma visão completa do estado de saúde do paciente.
+* **Conectividade com o NovaVita App:** Transmite dados em tempo real para o aplicativo, permitindo a criação de gráficos e análises detalhadas do estado de saúde.
+* **Monitoramento de Doenças Crônicas:** Especialmente projetado para monitorar condições crônicas, como diabetes, proporcionando uma gestão mais eficaz e personalizada.
+
+---
+
+## **Explicação Python**
+
+`Este repositório é a simulação em python da maioria das principais funções do aplicativo NovaVita.`
+
+---
+
 ## **Features Implementadas**
 * Menu de Cadastro, login, Remoção de cadastro e Encerramento;
 * Menu para o usuario logado, com atualizações de hardware do Soul, ultimas leituras dos sensores, suporte para dúvidas e Log-out;
