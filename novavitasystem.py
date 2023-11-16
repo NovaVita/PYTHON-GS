@@ -347,7 +347,7 @@ def menu_NovaVita2():
                             return True
                     except ValueError:
                         print('\033[31mDigite apenas sim ou não!\033[m\n')  
-                case 8:
+                case 9:
                     for dic in dados_cliente:
                         if dic['e-mail'] == email:
                             print(f'\n\033[33mObrigado por usar nossos serviços {dic["nome"]}!\033[m\n')
