@@ -72,7 +72,7 @@ Siga-nos para ficar atualizado sobre nossas inovações em saúde e tecnologia. 
 
 ---
 
-**Juntos, estamos construindo o futuro da saúde! 💚👩‍⚕️👨‍⚕️**
+# **Juntos, estamos construindo o futuro da saúde! 💚👩‍⚕️👨‍⚕️**
 
 ![Texto Alternativo](https://raw.githubusercontent.com/NovaVita/.github/main/foto-time.jpeg)
 
