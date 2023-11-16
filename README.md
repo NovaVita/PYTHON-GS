@@ -44,7 +44,7 @@ Agora você está pronto para explorar o programa. Divirta-se!
 
 ---
 
-**Time:**
+## **Time:**
 
 |       Aluno       |     Rm     |   Turma   |
 | ----------------- | ---------- | --------- |
