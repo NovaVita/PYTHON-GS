@@ -1,6 +1,6 @@
 ![Texto Alternativo](https://raw.githubusercontent.com/NovaVita/.github/main/logo-cortado-invisivel.png)
 
-# Bem-vindo ao repositório oficial da NovaVita no GitHub! 🚀
+# Bem-vindo ao repositório oficial de Python da NovaVita no GitHub! 🚀
 
 ---
 
