@@ -1,0 +1,1731 @@
+[
+    {
+        "name": "temperature",
+        "values": [
+            {
+                "_id": "65482ec5407de7000734d75c",
+                "recvTime": "2023-11-06T00:09:41.910Z",
+                "attrName": "temperature",
+                "attrType": "Float",
+                "attrValue": 36.8
+            },
+            {
+                "_id": "65482ecc407de7000734d763",
+                "recvTime": "2023-11-06T00:09:47.963Z",
+                "attrName": "temperature",
+                "attrType": "Float",
+                "attrValue": 36.4
+            },
+            {
+                "_id": "65482ed2407de7000734d768",
+                "recvTime": "2023-11-06T00:09:54.005Z",
+                "attrName": "temperature",
+                "attrType": "Float",
+                "attrValue": 36.8
+            },
+            {
+                "_id": "65482ed8407de7000734d76f",
+                "recvTime": "2023-11-06T00:10:00.045Z",
+                "attrName": "temperature",
+                "attrType": "Float",
+                "attrValue": 36.9
+            },
+            {
+                "_id": "65482ede407de7000734d776",
+                "recvTime": "2023-11-06T00:10:06.086Z",
+                "attrName": "temperature",
+                "attrType": "Float",
+                "attrValue": 36.7
+            },
+            {
+                "_id": "65482ee4407de7000734d77e",
+                "recvTime": "2023-11-06T00:10:12.048Z",
+                "attrName": "temperature",
+                "attrType": "Float",
+                "attrValue": 36.6
+            },
+            {
+                "_id": "65482eea407de7000734d781",
+                "recvTime": "2023-11-06T00:10:18.068Z",
+                "attrName": "temperature",
+                "attrType": "Float",
+                "attrValue": 36.5
+            },
+            {
+                "_id": "65482ef0407de7000734d788",
+                "recvTime": "2023-11-06T00:10:24.098Z",
+                "attrName": "temperature",
+                "attrType": "Float",
+                "attrValue": 37.2
+            },
+            {
+                "_id": "65482ef6407de7000734d78c",
+                "recvTime": "2023-11-06T00:10:30.178Z",
+                "attrName": "temperature",
+                "attrType": "Float",
+                "attrValue": 37
+            },
+            {
+                "_id": "65482efc407de7000734d792",
+                "recvTime": "2023-11-06T00:10:36.188Z",
+                "attrName": "temperature",
+                "attrType": "Float",
+                "attrValue": 37
+            },
+            {
+                "_id": "65482f02407de7000734d799",
+                "recvTime": "2023-11-06T00:10:42.224Z",
+                "attrName": "temperature",
+                "attrType": "Float",
+                "attrValue": 37.1
+            },
+            {
+                "_id": "65482f08407de7000734d79f",
+                "recvTime": "2023-11-06T00:10:48.273Z",
+                "attrName": "temperature",
+                "attrType": "Float",
+                "attrValue": 37
+            },
+            {
+                "_id": "65482f0e407de7000734d7a6",
+                "recvTime": "2023-11-06T00:10:54.311Z",
+                "attrName": "temperature",
+                "attrType": "Float",
+                "attrValue": 37
+            },
+            {
+                "_id": "65482f14407de7000734d7ac",
+                "recvTime": "2023-11-06T00:11:00.265Z",
+                "attrName": "temperature",
+                "attrType": "Float",
+                "attrValue": 36.9
+            },
+            {
+                "_id": "65482f1a407de7000734d7b2",
+                "recvTime": "2023-11-06T00:11:06.287Z",
+                "attrName": "temperature",
+                "attrType": "Float",
+                "attrValue": 37
+            },
+            {
+                "_id": "65482f20407de7000734d7b7",
+                "recvTime": "2023-11-06T00:11:12.331Z",
+                "attrName": "temperature",
+                "attrType": "Float",
+                "attrValue": 37
+            },
+            {
+                "_id": "65482f26407de7000734d7bd",
+                "recvTime": "2023-11-06T00:11:18.384Z",
+                "attrName": "temperature",
+                "attrType": "Float",
+                "attrValue": 37
+            },
+            {
+                "_id": "65482f2c407de7000734d7c2",
+                "recvTime": "2023-11-06T00:11:24.423Z",
+                "attrName": "temperature",
+                "attrType": "Float",
+                "attrValue": 37
+            },
+            {
+                "_id": "65482f32407de7000734d7cb",
+                "recvTime": "2023-11-06T00:11:30.470Z",
+                "attrName": "temperature",
+                "attrType": "Float",
+                "attrValue": 36.7
+            },
+            {
+                "_id": "65482f38407de7000734d7d2",
+                "recvTime": "2023-11-06T00:11:36.500Z",
+                "attrName": "temperature",
+                "attrType": "Float",
+                "attrValue": 37
+            },
+            {
+                "_id": "65482f3e407de7000734d7d4",
+                "recvTime": "2023-11-06T00:11:42.537Z",
+                "attrName": "temperature",
+                "attrType": "Float",
+                "attrValue": 37
+            },
+            {
+                "_id": "65482f44407de7000734d7db",
+                "recvTime": "2023-11-06T00:11:48.495Z",
+                "attrName": "temperature",
+                "attrType": "Float",
+                "attrValue": 37.1
+            },
+            {
+                "_id": "65482f4a407de7000734d7e1",
+                "recvTime": "2023-11-06T00:11:54.519Z",
+                "attrName": "temperature",
+                "attrType": "Float",
+                "attrValue": 37
+            },
+            {
+                "_id": "65482f50407de7000734d7e7",
+                "recvTime": "2023-11-06T00:12:00.569Z",
+                "attrName": "temperature",
+                "attrType": "Float",
+                "attrValue": 37
+            },
+            {
+                "_id": "65482f56407de7000734d7ed",
+                "recvTime": "2023-11-06T00:12:06.612Z",
+                "attrName": "temperature",
+                "attrType": "Float",
+                "attrValue": 37
+            },
+            {
+                "_id": "65482f5c407de7000734d7f3",
+                "recvTime": "2023-11-06T00:12:12.672Z",
+                "attrName": "temperature",
+                "attrType": "Float",
+                "attrValue": 37.2
+            },
+            {
+                "_id": "65482f62407de7000734d7fa",
+                "recvTime": "2023-11-06T00:12:18.697Z",
+                "attrName": "temperature",
+                "attrType": "Float",
+                "attrValue": 37
+            },
+            {
+                "_id": "65482f68407de7000734d7ff",
+                "recvTime": "2023-11-06T00:12:24.738Z",
+                "attrName": "temperature",
+                "attrType": "Float",
+                "attrValue": 37
+            },
+            {
+                "_id": "65482f6e407de7000734d805",
+                "recvTime": "2023-11-06T00:12:30.781Z",
+                "attrName": "temperature",
+                "attrType": "Float",
+                "attrValue": 37
+            },
+            {
+                "_id": "65482f74407de7000734d80e",
+                "recvTime": "2023-11-06T00:12:36.714Z",
+                "attrName": "temperature",
+                "attrType": "Float",
+                "attrValue": 37
+            },
+            {
+                "_id": "65482f7a407de7000734d811",
+                "recvTime": "2023-11-06T00:12:42.853Z",
+                "attrName": "temperature",
+                "attrType": "Float",
+                "attrValue": 37.2
+            },
+            {
+                "_id": "65482f80407de7000734d817",
+                "recvTime": "2023-11-06T00:12:48.798Z",
+                "attrName": "temperature",
+                "attrType": "Float",
+                "attrValue": 37
+            },
+            {
+                "_id": "65482f86407de7000734d81c",
+                "recvTime": "2023-11-06T00:12:54.844Z",
+                "attrName": "temperature",
+                "attrType": "Float",
+                "attrValue": 37
+            },
+            {
+                "_id": "65482f8c407de7000734d823",
+                "recvTime": "2023-11-06T00:13:00.926Z",
+                "attrName": "temperature",
+                "attrType": "Float",
+                "attrValue": 36.8
+            },
+            {
+                "_id": "65482f92407de7000734d82a",
+                "recvTime": "2023-11-06T00:13:06.923Z",
+                "attrName": "temperature",
+                "attrType": "Float",
+                "attrValue": 37
+            },
+            {
+                "_id": "65482f99407de7000734d82f",
+                "recvTime": "2023-11-06T00:13:12.973Z",
+                "attrName": "temperature",
+                "attrType": "Float",
+                "attrValue": 37
+            },
+            {
+                "_id": "65482f9f407de7000734d836",
+                "recvTime": "2023-11-06T00:13:19.017Z",
+                "attrName": "temperature",
+                "attrType": "Float",
+                "attrValue": 37
+            },
+            {
+                "_id": "65482fa4407de7000734d83a",
+                "recvTime": "2023-11-06T00:13:24.943Z",
+                "attrName": "temperature",
+                "attrType": "Float",
+                "attrValue": 37
+            },
+            {
+                "_id": "65482fab407de7000734d844",
+                "recvTime": "2023-11-06T00:13:31.117Z",
+                "attrName": "temperature",
+                "attrType": "Float",
+                "attrValue": 37
+            },
+            {
+                "_id": "65482fb1407de7000734d847",
+                "recvTime": "2023-11-06T00:13:37.043Z",
+                "attrName": "temperature",
+                "attrType": "Float",
+                "attrValue": 37
+            },
+            {
+                "_id": "65482fb7407de7000734d850",
+                "recvTime": "2023-11-06T00:13:43.064Z",
+                "attrName": "temperature",
+                "attrType": "Float",
+                "attrValue": 36.8
+            },
+            {
+                "_id": "65482fbd407de7000734d855",
+                "recvTime": "2023-11-06T00:13:49.115Z",
+                "attrName": "temperature",
+                "attrType": "Float",
+                "attrValue": 37
+            },
+            {
+                "_id": "65482fc3407de7000734d859",
+                "recvTime": "2023-11-06T00:13:55.147Z",
+                "attrName": "temperature",
+                "attrType": "Float",
+                "attrValue": 37
+            },
+            {
+                "_id": "65482fc9407de7000734d85e",
+                "recvTime": "2023-11-06T00:14:01.191Z",
+                "attrName": "temperature",
+                "attrType": "Float",
+                "attrValue": 37
+            },
+            {
+                "_id": "65482fcf407de7000734d864",
+                "recvTime": "2023-11-06T00:14:07.239Z",
+                "attrName": "temperature",
+                "attrType": "Float",
+                "attrValue": 37.1
+            },
+            {
+                "_id": "65482fd5407de7000734d86c",
+                "recvTime": "2023-11-06T00:14:13.176Z",
+                "attrName": "temperature",
+                "attrType": "Float",
+                "attrValue": 37
+            },
+            {
+                "_id": "65482fdb407de7000734d871",
+                "recvTime": "2023-11-06T00:14:19.316Z",
+                "attrName": "temperature",
+                "attrType": "Float",
+                "attrValue": 37
+            },
+            {
+                "_id": "65482fe1407de7000734d877",
+                "recvTime": "2023-11-06T00:14:25.254Z",
+                "attrName": "temperature",
+                "attrType": "Float",
+                "attrValue": 37
+            },
+            {
+                "_id": "65482fe7407de7000734d87c",
+                "recvTime": "2023-11-06T00:14:31.302Z",
+                "attrName": "temperature",
+                "attrType": "Float",
+                "attrValue": 36.9
+            },
+            {
+                "_id": "65482fed407de7000734d884",
+                "recvTime": "2023-11-06T00:14:37.393Z",
+                "attrName": "temperature",
+                "attrType": "Float",
+                "attrValue": 37
+            }
+        ]
+    },
+
+    {
+        "name": "glucose",
+        "values": [
+            {
+                "_id": "65482ec5407de7000734d760",
+                "recvTime": "2023-11-06T00:09:41.924Z",
+                "attrName": "glucose",
+                "attrType": "Int",
+                "attrValue": 113
+            },
+            {
+                "_id": "65482ecc407de7000734d765",
+                "recvTime": "2023-11-06T00:09:47.976Z",
+                "attrName": "glucose",
+                "attrType": "Int",
+                "attrValue": 113
+            },
+            {
+                "_id": "65482ed2407de7000734d76a",
+                "recvTime": "2023-11-06T00:09:54.008Z",
+                "attrName": "glucose",
+                "attrType": "Int",
+                "attrValue": 114
+            },
+            {
+                "_id": "65482ed8407de7000734d772",
+                "recvTime": "2023-11-06T00:10:00.061Z",
+                "attrName": "glucose",
+                "attrType": "Int",
+                "attrValue": 116
+            },
+            {
+                "_id": "65482ede407de7000734d778",
+                "recvTime": "2023-11-06T00:10:06.093Z",
+                "attrName": "glucose",
+                "attrType": "Int",
+                "attrValue": 115
+            },
+            {
+                "_id": "65482ee4407de7000734d77a",
+                "recvTime": "2023-11-06T00:10:12.038Z",
+                "attrName": "glucose",
+                "attrType": "Int",
+                "attrValue": 115
+            },
+            {
+                "_id": "65482eea407de7000734d782",
+                "recvTime": "2023-11-06T00:10:18.075Z",
+                "attrName": "glucose",
+                "attrType": "Int",
+                "attrValue": 115
+            },
+            {
+                "_id": "65482ef0407de7000734d789",
+                "recvTime": "2023-11-06T00:10:24.103Z",
+                "attrName": "glucose",
+                "attrType": "Int",
+                "attrValue": 117
+            },
+            {
+                "_id": "65482ef6407de7000734d790",
+                "recvTime": "2023-11-06T00:10:30.198Z",
+                "attrName": "glucose",
+                "attrType": "Int",
+                "attrValue": 110
+            },
+            {
+                "_id": "65482efc407de7000734d796",
+                "recvTime": "2023-11-06T00:10:36.196Z",
+                "attrName": "glucose",
+                "attrType": "Int",
+                "attrValue": 110
+            },
+            {
+                "_id": "65482f02407de7000734d79a",
+                "recvTime": "2023-11-06T00:10:42.230Z",
+                "attrName": "glucose",
+                "attrType": "Int",
+                "attrValue": 107
+            },
+            {
+                "_id": "65482f08407de7000734d7a1",
+                "recvTime": "2023-11-06T00:10:48.290Z",
+                "attrName": "glucose",
+                "attrType": "Int",
+                "attrValue": 107
+            },
+            {
+                "_id": "65482f0e407de7000734d7a7",
+                "recvTime": "2023-11-06T00:10:54.316Z",
+                "attrName": "glucose",
+                "attrType": "Int",
+                "attrValue": 107
+            },
+            {
+                "_id": "65482f14407de7000734d7ab",
+                "recvTime": "2023-11-06T00:11:00.280Z",
+                "attrName": "glucose",
+                "attrType": "Int",
+                "attrValue": 107
+            },
+            {
+                "_id": "65482f1a407de7000734d7b3",
+                "recvTime": "2023-11-06T00:11:06.291Z",
+                "attrName": "glucose",
+                "attrType": "Int",
+                "attrValue": 107
+            },
+            {
+                "_id": "65482f20407de7000734d7b8",
+                "recvTime": "2023-11-06T00:11:12.355Z",
+                "attrName": "glucose",
+                "attrType": "Int",
+                "attrValue": 110
+            },
+            {
+                "_id": "65482f26407de7000734d7bf",
+                "recvTime": "2023-11-06T00:11:18.397Z",
+                "attrName": "glucose",
+                "attrType": "Int",
+                "attrValue": 110
+            },
+            {
+                "_id": "65482f2c407de7000734d7c6",
+                "recvTime": "2023-11-06T00:11:24.432Z",
+                "attrName": "glucose",
+                "attrType": "Int",
+                "attrValue": 110
+            },
+            {
+                "_id": "65482f32407de7000734d7ca",
+                "recvTime": "2023-11-06T00:11:30.478Z",
+                "attrName": "glucose",
+                "attrType": "Int",
+                "attrValue": 110
+            },
+            {
+                "_id": "65482f38407de7000734d7d1",
+                "recvTime": "2023-11-06T00:11:36.513Z",
+                "attrName": "glucose",
+                "attrType": "Int",
+                "attrValue": 110
+            },
+            {
+                "_id": "65482f3e407de7000734d7d5",
+                "recvTime": "2023-11-06T00:11:42.540Z",
+                "attrName": "glucose",
+                "attrType": "Int",
+                "attrValue": 110
+            },
+            {
+                "_id": "65482f44407de7000734d7d9",
+                "recvTime": "2023-11-06T00:11:48.483Z",
+                "attrName": "glucose",
+                "attrType": "Int",
+                "attrValue": 110
+            },
+            {
+                "_id": "65482f4a407de7000734d7e4",
+                "recvTime": "2023-11-06T00:11:54.523Z",
+                "attrName": "glucose",
+                "attrType": "Int",
+                "attrValue": 110
+            },
+            {
+                "_id": "65482f50407de7000734d7ea",
+                "recvTime": "2023-11-06T00:12:00.581Z",
+                "attrName": "glucose",
+                "attrType": "Int",
+                "attrValue": 105
+            },
+            {
+                "_id": "65482f56407de7000734d7ef",
+                "recvTime": "2023-11-06T00:12:06.622Z",
+                "attrName": "glucose",
+                "attrType": "Int",
+                "attrValue": 105
+            },
+            {
+                "_id": "65482f5c407de7000734d7f6",
+                "recvTime": "2023-11-06T00:12:12.693Z",
+                "attrName": "glucose",
+                "attrType": "Int",
+                "attrValue": 105
+            },
+            {
+                "_id": "65482f62407de7000734d7fb",
+                "recvTime": "2023-11-06T00:12:18.705Z",
+                "attrName": "glucose",
+                "attrType": "Int",
+                "attrValue": 105
+            },
+            {
+                "_id": "65482f68407de7000734d802",
+                "recvTime": "2023-11-06T00:12:24.748Z",
+                "attrName": "glucose",
+                "attrType": "Int",
+                "attrValue": 105
+            },
+            {
+                "_id": "65482f6e407de7000734d807",
+                "recvTime": "2023-11-06T00:12:30.795Z",
+                "attrName": "glucose",
+                "attrType": "Int",
+                "attrValue": 100
+            },
+            {
+                "_id": "65482f74407de7000734d80b",
+                "recvTime": "2023-11-06T00:12:36.710Z",
+                "attrName": "glucose",
+                "attrType": "Int",
+                "attrValue": 100
+            },
+            {
+                "_id": "65482f7a407de7000734d812",
+                "recvTime": "2023-11-06T00:12:42.859Z",
+                "attrName": "glucose",
+                "attrType": "Int",
+                "attrValue": 100
+            },
+            {
+                "_id": "65482f80407de7000734d81a",
+                "recvTime": "2023-11-06T00:12:48.801Z",
+                "attrName": "glucose",
+                "attrType": "Int",
+                "attrValue": 100
+            },
+            {
+                "_id": "65482f86407de7000734d81f",
+                "recvTime": "2023-11-06T00:12:54.858Z",
+                "attrName": "glucose",
+                "attrType": "Int",
+                "attrValue": 120
+            },
+            {
+                "_id": "65482f8c407de7000734d826",
+                "recvTime": "2023-11-06T00:13:00.937Z",
+                "attrName": "glucose",
+                "attrType": "Int",
+                "attrValue": 120
+            },
+            {
+                "_id": "65482f92407de7000734d829",
+                "recvTime": "2023-11-06T00:13:06.940Z",
+                "attrName": "glucose",
+                "attrType": "Int",
+                "attrValue": 120
+            },
+            {
+                "_id": "65482f99407de7000734d832",
+                "recvTime": "2023-11-06T00:13:12.989Z",
+                "attrName": "glucose",
+                "attrType": "Int",
+                "attrValue": 120
+            },
+            {
+                "_id": "65482f9f407de7000734d838",
+                "recvTime": "2023-11-06T00:13:19.038Z",
+                "attrName": "glucose",
+                "attrType": "Int",
+                "attrValue": 120
+            },
+            {
+                "_id": "65482fa4407de7000734d83d",
+                "recvTime": "2023-11-06T00:13:24.958Z",
+                "attrName": "glucose",
+                "attrType": "Int",
+                "attrValue": 120
+            },
+            {
+                "_id": "65482fab407de7000734d843",
+                "recvTime": "2023-11-06T00:13:31.111Z",
+                "attrName": "glucose",
+                "attrType": "Int",
+                "attrValue": 120
+            },
+            {
+                "_id": "65482fb1407de7000734d848",
+                "recvTime": "2023-11-06T00:13:37.049Z",
+                "attrName": "glucose",
+                "attrType": "Int",
+                "attrValue": 120
+            },
+            {
+                "_id": "65482fb7407de7000734d84f",
+                "recvTime": "2023-11-06T00:13:43.069Z",
+                "attrName": "glucose",
+                "attrType": "Int",
+                "attrValue": 120
+            },
+            {
+                "_id": "65482fbd407de7000734d851",
+                "recvTime": "2023-11-06T00:13:49.109Z",
+                "attrName": "glucose",
+                "attrType": "Int",
+                "attrValue": 120
+            },
+            {
+                "_id": "65482fc3407de7000734d85c",
+                "recvTime": "2023-11-06T00:13:55.151Z",
+                "attrName": "glucose",
+                "attrType": "Int",
+                "attrValue": 120
+            },
+            {
+                "_id": "65482fc9407de7000734d862",
+                "recvTime": "2023-11-06T00:14:01.203Z",
+                "attrName": "glucose",
+                "attrType": "Int",
+                "attrValue": 116
+            },
+            {
+                "_id": "65482fcf407de7000734d867",
+                "recvTime": "2023-11-06T00:14:07.247Z",
+                "attrName": "glucose",
+                "attrType": "Int",
+                "attrValue": 116
+            },
+            {
+                "_id": "65482fd5407de7000734d86e",
+                "recvTime": "2023-11-06T00:14:13.182Z",
+                "attrName": "glucose",
+                "attrType": "Int",
+                "attrValue": 114
+            },
+            {
+                "_id": "65482fdb407de7000734d874",
+                "recvTime": "2023-11-06T00:14:19.321Z",
+                "attrName": "glucose",
+                "attrType": "Int",
+                "attrValue": 114
+            },
+            {
+                "_id": "65482fe1407de7000734d878",
+                "recvTime": "2023-11-06T00:14:25.258Z",
+                "attrName": "glucose",
+                "attrType": "Int",
+                "attrValue": 114
+            },
+            {
+                "_id": "65482fe7407de7000734d880",
+                "recvTime": "2023-11-06T00:14:31.309Z",
+                "attrName": "glucose",
+                "attrType": "Int",
+                "attrValue": 113
+            },
+            {
+                "_id": "65482fed407de7000734d882",
+                "recvTime": "2023-11-06T00:14:37.380Z",
+                "attrName": "glucose",
+                "attrType": "Int",
+                "attrValue": 112
+            }
+        ]
+    },
+    {
+        "name": "oxigenacao",
+        "values": [
+            {
+                "_id": "65482ec5407de7000734d75b",
+                "recvTime": "2023-11-06T00:09:41.625Z",
+                "attrName": "oxigenacao",
+                "attrType": "Float",
+                "attrValue": 98
+            },
+            {
+                "_id": "65482ecc407de7000734d761",
+                "recvTime": "2023-11-06T00:09:47.952Z",
+                "attrName": "oxigenacao",
+                "attrType": "Float",
+                "attrValue": 98
+            },
+            {
+                "_id": "65482ed1407de7000734d767",
+                "recvTime": "2023-11-06T00:09:53.682Z",
+                "attrName": "oxigenacao",
+                "attrType": "Float",
+                "attrValue": 98
+            },
+            {
+                "_id": "65482ed7407de7000734d76d",
+                "recvTime": "2023-11-06T00:09:59.715Z",
+                "attrName": "oxigenacao",
+                "attrType": "Float",
+                "attrValue": 98
+            },
+            {
+                "_id": "65482edd407de7000734d773",
+                "recvTime": "2023-11-06T00:10:05.741Z",
+                "attrName": "oxigenacao",
+                "attrType": "Float",
+                "attrValue": 98
+            },
+            {
+                "_id": "65482ee4407de7000734d779",
+                "recvTime": "2023-11-06T00:10:12.026Z",
+                "attrName": "oxigenacao",
+                "attrType": "Float",
+                "attrValue": 98
+            },
+            {
+                "_id": "65482ee9407de7000734d77f",
+                "recvTime": "2023-11-06T00:10:17.801Z",
+                "attrName": "oxigenacao",
+                "attrType": "Float",
+                "attrValue": 98
+            },
+            {
+                "_id": "65482eef407de7000734d785",
+                "recvTime": "2023-11-06T00:10:23.828Z",
+                "attrName": "oxigenacao",
+                "attrType": "Float",
+                "attrValue": 98
+            },
+            {
+                "_id": "65482ef5407de7000734d78b",
+                "recvTime": "2023-11-06T00:10:29.858Z",
+                "attrName": "oxigenacao",
+                "attrType": "Float",
+                "attrValue": 97
+            },
+            {
+                "_id": "65482efc407de7000734d791",
+                "recvTime": "2023-11-06T00:10:36.181Z",
+                "attrName": "oxigenacao",
+                "attrType": "Float",
+                "attrValue": 97
+            },
+            {
+                "_id": "65482f01407de7000734d797",
+                "recvTime": "2023-11-06T00:10:41.918Z",
+                "attrName": "oxigenacao",
+                "attrType": "Float",
+                "attrValue": 97
+            },
+            {
+                "_id": "65482f07407de7000734d79d",
+                "recvTime": "2023-11-06T00:10:47.946Z",
+                "attrName": "oxigenacao",
+                "attrType": "Float",
+                "attrValue": 97
+            },
+            {
+                "_id": "65482f0d407de7000734d7a3",
+                "recvTime": "2023-11-06T00:10:53.974Z",
+                "attrName": "oxigenacao",
+                "attrType": "Float",
+                "attrValue": 97
+            },
+            {
+                "_id": "65482f14407de7000734d7a9",
+                "recvTime": "2023-11-06T00:11:00.253Z",
+                "attrName": "oxigenacao",
+                "attrType": "Float",
+                "attrValue": 97
+            },
+            {
+                "_id": "65482f1a407de7000734d7af",
+                "recvTime": "2023-11-06T00:11:06.037Z",
+                "attrName": "oxigenacao",
+                "attrType": "Float",
+                "attrValue": 97
+            },
+            {
+                "_id": "65482f20407de7000734d7b5",
+                "recvTime": "2023-11-06T00:11:12.062Z",
+                "attrName": "oxigenacao",
+                "attrType": "Float",
+                "attrValue": 97
+            },
+            {
+                "_id": "65482f26407de7000734d7bb",
+                "recvTime": "2023-11-06T00:11:18.095Z",
+                "attrName": "oxigenacao",
+                "attrType": "Float",
+                "attrValue": 99
+            },
+            {
+                "_id": "65482f2c407de7000734d7c1",
+                "recvTime": "2023-11-06T00:11:24.415Z",
+                "attrName": "oxigenacao",
+                "attrType": "Float",
+                "attrValue": 99
+            },
+            {
+                "_id": "65482f32407de7000734d7c7",
+                "recvTime": "2023-11-06T00:11:30.152Z",
+                "attrName": "oxigenacao",
+                "attrType": "Float",
+                "attrValue": 99
+            },
+            {
+                "_id": "65482f38407de7000734d7cd",
+                "recvTime": "2023-11-06T00:11:36.180Z",
+                "attrName": "oxigenacao",
+                "attrType": "Float",
+                "attrValue": 99
+            },
+            {
+                "_id": "65482f3e407de7000734d7d3",
+                "recvTime": "2023-11-06T00:11:42.212Z",
+                "attrName": "oxigenacao",
+                "attrType": "Float",
+                "attrValue": 99
+            },
+            {
+                "_id": "65482f44407de7000734d7dd",
+                "recvTime": "2023-11-06T00:11:48.488Z",
+                "attrName": "oxigenacao",
+                "attrType": "Float",
+                "attrValue": 99
+            },
+            {
+                "_id": "65482f4a407de7000734d7df",
+                "recvTime": "2023-11-06T00:11:54.272Z",
+                "attrName": "oxigenacao",
+                "attrType": "Float",
+                "attrValue": 99
+            },
+            {
+                "_id": "65482f50407de7000734d7e5",
+                "recvTime": "2023-11-06T00:12:00.297Z",
+                "attrName": "oxigenacao",
+                "attrType": "Float",
+                "attrValue": 99
+            },
+            {
+                "_id": "65482f56407de7000734d7eb",
+                "recvTime": "2023-11-06T00:12:06.330Z",
+                "attrName": "oxigenacao",
+                "attrType": "Float",
+                "attrValue": 99
+            },
+            {
+                "_id": "65482f5c407de7000734d7f1",
+                "recvTime": "2023-11-06T00:12:12.656Z",
+                "attrName": "oxigenacao",
+                "attrType": "Float",
+                "attrValue": 99
+            },
+            {
+                "_id": "65482f62407de7000734d7f7",
+                "recvTime": "2023-11-06T00:12:18.390Z",
+                "attrName": "oxigenacao",
+                "attrType": "Float",
+                "attrValue": 99
+            },
+            {
+                "_id": "65482f68407de7000734d7fd",
+                "recvTime": "2023-11-06T00:12:24.416Z",
+                "attrName": "oxigenacao",
+                "attrType": "Float",
+                "attrValue": 98
+            },
+            {
+                "_id": "65482f6e407de7000734d803",
+                "recvTime": "2023-11-06T00:12:30.444Z",
+                "attrName": "oxigenacao",
+                "attrType": "Float",
+                "attrValue": 98
+            },
+            {
+                "_id": "65482f74407de7000734d809",
+                "recvTime": "2023-11-06T00:12:36.709Z",
+                "attrName": "oxigenacao",
+                "attrType": "Float",
+                "attrValue": 98
+            },
+            {
+                "_id": "65482f7a407de7000734d80f",
+                "recvTime": "2023-11-06T00:12:42.505Z",
+                "attrName": "oxigenacao",
+                "attrType": "Float",
+                "attrValue": 98
+            },
+            {
+                "_id": "65482f80407de7000734d815",
+                "recvTime": "2023-11-06T00:12:48.539Z",
+                "attrName": "oxigenacao",
+                "attrType": "Float",
+                "attrValue": 98
+            },
+            {
+                "_id": "65482f86407de7000734d81b",
+                "recvTime": "2023-11-06T00:12:54.563Z",
+                "attrName": "oxigenacao",
+                "attrType": "Float",
+                "attrValue": 98
+            },
+            {
+                "_id": "65482f8c407de7000734d822",
+                "recvTime": "2023-11-06T00:13:00.920Z",
+                "attrName": "oxigenacao",
+                "attrType": "Float",
+                "attrValue": 98
+            },
+            {
+                "_id": "65482f92407de7000734d827",
+                "recvTime": "2023-11-06T00:13:06.622Z",
+                "attrName": "oxigenacao",
+                "attrType": "Float",
+                "attrValue": 98
+            },
+            {
+                "_id": "65482f98407de7000734d82d",
+                "recvTime": "2023-11-06T00:13:12.654Z",
+                "attrName": "oxigenacao",
+                "attrType": "Float",
+                "attrValue": 98
+            },
+            {
+                "_id": "65482f9e407de7000734d833",
+                "recvTime": "2023-11-06T00:13:18.685Z",
+                "attrName": "oxigenacao",
+                "attrType": "Float",
+                "attrValue": 97
+            },
+            {
+                "_id": "65482fa4407de7000734d839",
+                "recvTime": "2023-11-06T00:13:24.939Z",
+                "attrName": "oxigenacao",
+                "attrType": "Float",
+                "attrValue": 97
+            },
+            {
+                "_id": "65482faa407de7000734d83f",
+                "recvTime": "2023-11-06T00:13:30.743Z",
+                "attrName": "oxigenacao",
+                "attrType": "Float",
+                "attrValue": 97
+            },
+            {
+                "_id": "65482fb0407de7000734d845",
+                "recvTime": "2023-11-06T00:13:36.770Z",
+                "attrName": "oxigenacao",
+                "attrType": "Float",
+                "attrValue": 99
+            },
+            {
+                "_id": "65482fb6407de7000734d84b",
+                "recvTime": "2023-11-06T00:13:42.797Z",
+                "attrName": "oxigenacao",
+                "attrType": "Float",
+                "attrValue": 99
+            },
+            {
+                "_id": "65482fbd407de7000734d852",
+                "recvTime": "2023-11-06T00:13:49.112Z",
+                "attrName": "oxigenacao",
+                "attrType": "Float",
+                "attrValue": 99
+            },
+            {
+                "_id": "65482fc2407de7000734d857",
+                "recvTime": "2023-11-06T00:13:54.856Z",
+                "attrName": "oxigenacao",
+                "attrType": "Float",
+                "attrValue": 99
+            },
+            {
+                "_id": "65482fc8407de7000734d85d",
+                "recvTime": "2023-11-06T00:14:00.887Z",
+                "attrName": "oxigenacao",
+                "attrType": "Float",
+                "attrValue": 99
+            },
+            {
+                "_id": "65482fce407de7000734d863",
+                "recvTime": "2023-11-06T00:14:06.914Z",
+                "attrName": "oxigenacao",
+                "attrType": "Float",
+                "attrValue": 100
+            },
+            {
+                "_id": "65482fd5407de7000734d869",
+                "recvTime": "2023-11-06T00:14:13.171Z",
+                "attrName": "oxigenacao",
+                "attrType": "Float",
+                "attrValue": 100
+            },
+            {
+                "_id": "65482fda407de7000734d86f",
+                "recvTime": "2023-11-06T00:14:18.975Z",
+                "attrName": "oxigenacao",
+                "attrType": "Float",
+                "attrValue": 99
+            },
+            {
+                "_id": "65482fe1407de7000734d875",
+                "recvTime": "2023-11-06T00:14:25.005Z",
+                "attrName": "oxigenacao",
+                "attrType": "Float",
+                "attrValue": 100
+            },
+            {
+                "_id": "65482fe7407de7000734d87b",
+                "recvTime": "2023-11-06T00:14:31.033Z",
+                "attrName": "oxigenacao",
+                "attrType": "Float",
+                "attrValue": 100
+            },
+            {
+                "_id": "65482fed407de7000734d881",
+                "recvTime": "2023-11-06T00:14:37.369Z",
+                "attrName": "oxigenacao",
+                "attrType": "Float",
+                "attrValue": 100
+            }
+        ]
+    },
+
+    {
+        "name": "frequencia",
+        "values": [
+            {
+                "_id": "65482ec5407de7000734d75f",
+                "recvTime": "2023-11-06T00:09:41.919Z",
+                "attrName": "frequencia",
+                "attrType": "Float",
+                "attrValue": 80
+            },
+            {
+                "_id": "65482ecc407de7000734d762",
+                "recvTime": "2023-11-06T00:09:47.959Z",
+                "attrName": "frequencia",
+                "attrType": "Float",
+                "attrValue": 80
+            },
+            {
+                "_id": "65482ed2407de7000734d769",
+                "recvTime": "2023-11-06T00:09:53.999Z",
+                "attrName": "frequencia",
+                "attrType": "Float",
+                "attrValue": 80
+            },
+            {
+                "_id": "65482ed8407de7000734d76e",
+                "recvTime": "2023-11-06T00:10:00.040Z",
+                "attrName": "frequencia",
+                "attrType": "Float",
+                "attrValue": 80
+            },
+            {
+                "_id": "65482ede407de7000734d774",
+                "recvTime": "2023-11-06T00:10:06.077Z",
+                "attrName": "frequencia",
+                "attrType": "Float",
+                "attrValue": 80
+            },
+            {
+                "_id": "65482ee4407de7000734d77c",
+                "recvTime": "2023-11-06T00:10:12.043Z",
+                "attrName": "frequencia",
+                "attrType": "Float",
+                "attrValue": 80
+            },
+            {
+                "_id": "65482eea407de7000734d780",
+                "recvTime": "2023-11-06T00:10:18.061Z",
+                "attrName": "frequencia",
+                "attrType": "Float",
+                "attrValue": 80
+            },
+            {
+                "_id": "65482ef0407de7000734d786",
+                "recvTime": "2023-11-06T00:10:24.097Z",
+                "attrName": "frequencia",
+                "attrType": "Float",
+                "attrValue": 87
+            },
+            {
+                "_id": "65482ef6407de7000734d78e",
+                "recvTime": "2023-11-06T00:10:30.174Z",
+                "attrName": "frequencia",
+                "attrType": "Float",
+                "attrValue": 87
+            },
+            {
+                "_id": "65482efc407de7000734d793",
+                "recvTime": "2023-11-06T00:10:36.186Z",
+                "attrName": "frequencia",
+                "attrType": "Float",
+                "attrValue": 87
+            },
+            {
+                "_id": "65482f02407de7000734d798",
+                "recvTime": "2023-11-06T00:10:42.222Z",
+                "attrName": "frequencia",
+                "attrType": "Float",
+                "attrValue": 87
+            },
+            {
+                "_id": "65482f08407de7000734d79e",
+                "recvTime": "2023-11-06T00:10:48.269Z",
+                "attrName": "frequencia",
+                "attrType": "Float",
+                "attrValue": 87
+            },
+            {
+                "_id": "65482f0e407de7000734d7a4",
+                "recvTime": "2023-11-06T00:10:54.308Z",
+                "attrName": "frequencia",
+                "attrType": "Float",
+                "attrValue": 89
+            },
+            {
+                "_id": "65482f14407de7000734d7aa",
+                "recvTime": "2023-11-06T00:11:00.260Z",
+                "attrName": "frequencia",
+                "attrType": "Float",
+                "attrValue": 89
+            },
+            {
+                "_id": "65482f1a407de7000734d7b0",
+                "recvTime": "2023-11-06T00:11:06.286Z",
+                "attrName": "frequencia",
+                "attrType": "Float",
+                "attrValue": 89
+            },
+            {
+                "_id": "65482f20407de7000734d7b6",
+                "recvTime": "2023-11-06T00:11:12.343Z",
+                "attrName": "frequencia",
+                "attrType": "Float",
+                "attrValue": 90
+            },
+            {
+                "_id": "65482f26407de7000734d7bc",
+                "recvTime": "2023-11-06T00:11:18.378Z",
+                "attrName": "frequencia",
+                "attrType": "Float",
+                "attrValue": 90
+            },
+            {
+                "_id": "65482f2c407de7000734d7c3",
+                "recvTime": "2023-11-06T00:11:24.418Z",
+                "attrName": "frequencia",
+                "attrType": "Float",
+                "attrValue": 90
+            },
+            {
+                "_id": "65482f32407de7000734d7c8",
+                "recvTime": "2023-11-06T00:11:30.459Z",
+                "attrName": "frequencia",
+                "attrType": "Float",
+                "attrValue": 90
+            },
+            {
+                "_id": "65482f38407de7000734d7ce",
+                "recvTime": "2023-11-06T00:11:36.499Z",
+                "attrName": "frequencia",
+                "attrType": "Float",
+                "attrValue": 95
+            },
+            {
+                "_id": "65482f3e407de7000734d7d6",
+                "recvTime": "2023-11-06T00:11:42.546Z",
+                "attrName": "frequencia",
+                "attrType": "Float",
+                "attrValue": 95
+            },
+            {
+                "_id": "65482f44407de7000734d7dc",
+                "recvTime": "2023-11-06T00:11:48.492Z",
+                "attrName": "frequencia",
+                "attrType": "Float",
+                "attrValue": 95
+            },
+            {
+                "_id": "65482f4a407de7000734d7e0",
+                "recvTime": "2023-11-06T00:11:54.516Z",
+                "attrName": "frequencia",
+                "attrType": "Float",
+                "attrValue": 95
+            },
+            {
+                "_id": "65482f50407de7000734d7e6",
+                "recvTime": "2023-11-06T00:12:00.565Z",
+                "attrName": "frequencia",
+                "attrType": "Float",
+                "attrValue": 90
+            },
+            {
+                "_id": "65482f56407de7000734d7ec",
+                "recvTime": "2023-11-06T00:12:06.607Z",
+                "attrName": "frequencia",
+                "attrType": "Float",
+                "attrValue": 90
+            },
+            {
+                "_id": "65482f5c407de7000734d7f2",
+                "recvTime": "2023-11-06T00:12:12.666Z",
+                "attrName": "frequencia",
+                "attrType": "Float",
+                "attrValue": 90
+            },
+            {
+                "_id": "65482f62407de7000734d7f8",
+                "recvTime": "2023-11-06T00:12:18.689Z",
+                "attrName": "frequencia",
+                "attrType": "Float",
+                "attrValue": 90
+            },
+            {
+                "_id": "65482f68407de7000734d7fe",
+                "recvTime": "2023-11-06T00:12:24.733Z",
+                "attrName": "frequencia",
+                "attrType": "Float",
+                "attrValue": 90
+            },
+            {
+                "_id": "65482f6e407de7000734d804",
+                "recvTime": "2023-11-06T00:12:30.775Z",
+                "attrName": "frequencia",
+                "attrType": "Float",
+                "attrValue": 87
+            },
+            {
+                "_id": "65482f74407de7000734d80d",
+                "recvTime": "2023-11-06T00:12:36.713Z",
+                "attrName": "frequencia",
+                "attrType": "Float",
+                "attrValue": 87
+            },
+            {
+                "_id": "65482f7a407de7000734d810",
+                "recvTime": "2023-11-06T00:12:42.852Z",
+                "attrName": "frequencia",
+                "attrType": "Float",
+                "attrValue": 87
+            },
+            {
+                "_id": "65482f80407de7000734d816",
+                "recvTime": "2023-11-06T00:12:48.796Z",
+                "attrName": "frequencia",
+                "attrType": "Float",
+                "attrValue": 87
+            },
+            {
+                "_id": "65482f86407de7000734d81d",
+                "recvTime": "2023-11-06T00:12:54.838Z",
+                "attrName": "frequencia",
+                "attrType": "Float",
+                "attrValue": 87
+            },
+            {
+                "_id": "65482f8c407de7000734d821",
+                "recvTime": "2023-11-06T00:13:00.914Z",
+                "attrName": "frequencia",
+                "attrType": "Float",
+                "attrValue": 82
+            },
+            {
+                "_id": "65482f92407de7000734d82b",
+                "recvTime": "2023-11-06T00:13:06.945Z",
+                "attrName": "frequencia",
+                "attrType": "Float",
+                "attrValue": 82
+            },
+            {
+                "_id": "65482f99407de7000734d82e",
+                "recvTime": "2023-11-06T00:13:12.967Z",
+                "attrName": "frequencia",
+                "attrType": "Float",
+                "attrValue": 82
+            },
+            {
+                "_id": "65482f9f407de7000734d834",
+                "recvTime": "2023-11-06T00:13:19.012Z",
+                "attrName": "frequencia",
+                "attrType": "Float",
+                "attrValue": 82
+            },
+            {
+                "_id": "65482fa5407de7000734d83e",
+                "recvTime": "2023-11-06T00:13:24.942Z",
+                "attrName": "frequencia",
+                "attrType": "Float",
+                "attrValue": 82
+            },
+            {
+                "_id": "65482fab407de7000734d841",
+                "recvTime": "2023-11-06T00:13:31.092Z",
+                "attrName": "frequencia",
+                "attrType": "Float",
+                "attrValue": 78
+            },
+            {
+                "_id": "65482fb1407de7000734d846",
+                "recvTime": "2023-11-06T00:13:37.040Z",
+                "attrName": "frequencia",
+                "attrType": "Float",
+                "attrValue": 78
+            },
+            {
+                "_id": "65482fb7407de7000734d84c",
+                "recvTime": "2023-11-06T00:13:43.063Z",
+                "attrName": "frequencia",
+                "attrType": "Float",
+                "attrValue": 78
+            },
+            {
+                "_id": "65482fbd407de7000734d853",
+                "recvTime": "2023-11-06T00:13:49.113Z",
+                "attrName": "frequencia",
+                "attrType": "Float",
+                "attrValue": 78
+            },
+            {
+                "_id": "65482fc3407de7000734d858",
+                "recvTime": "2023-11-06T00:13:55.146Z",
+                "attrName": "frequencia",
+                "attrType": "Float",
+                "attrValue": 78
+            },
+            {
+                "_id": "65482fc9407de7000734d860",
+                "recvTime": "2023-11-06T00:14:01.198Z",
+                "attrName": "frequencia",
+                "attrType": "Float",
+                "attrValue": 80
+            },
+            {
+                "_id": "65482fcf407de7000734d866",
+                "recvTime": "2023-11-06T00:14:07.236Z",
+                "attrName": "frequencia",
+                "attrType": "Float",
+                "attrValue": 80
+            },
+            {
+                "_id": "65482fd5407de7000734d86a",
+                "recvTime": "2023-11-06T00:14:13.174Z",
+                "attrName": "frequencia",
+                "attrType": "Float",
+                "attrValue": 80
+            },
+            {
+                "_id": "65482fdb407de7000734d870",
+                "recvTime": "2023-11-06T00:14:19.315Z",
+                "attrName": "frequencia",
+                "attrType": "Float",
+                "attrValue": 80
+            },
+            {
+                "_id": "65482fe1407de7000734d876",
+                "recvTime": "2023-11-06T00:14:25.252Z",
+                "attrName": "frequencia",
+                "attrType": "Float",
+                "attrValue": 80
+            },
+            {
+                "_id": "65482fe7407de7000734d87f",
+                "recvTime": "2023-11-06T00:14:31.307Z",
+                "attrName": "frequencia",
+                "attrType": "Float",
+                "attrValue": 80
+            },
+            {
+                "_id": "65482fed407de7000734d883",
+                "recvTime": "2023-11-06T00:14:37.387Z",
+                "attrName": "frequencia",
+                "attrType": "Float",
+                "attrValue": 81
+            }
+        ]
+    },
+    {
+        "name": "pressao",
+        "values": [
+            {
+                "_id": "65482ec5407de7000734d75e",
+                "recvTime": "2023-11-06T00:09:41.914Z",
+                "attrName": "pressao",
+                "attrType": "str",
+                "attrValue": "98/60"
+            },
+            {
+                "_id": "65482ecc407de7000734d764",
+                "recvTime": "2023-11-06T00:09:47.967Z",
+                "attrName": "pressao",
+                "attrType": "str",
+                "attrValue": "98/60"            },
+            {
+                "_id": "65482ed2407de7000734d76c",
+                "recvTime": "2023-11-06T00:09:54.011Z",
+                "attrName": "pressao",
+                "attrType": "str",
+                "attrValue": "98/60"            },
+            {
+                "_id": "65482ed8407de7000734d770",
+                "recvTime": "2023-11-06T00:10:00.050Z",
+                "attrName": "pressao",
+                "attrType": "str",
+                "attrValue": "98/60"            },
+            {
+                "_id": "65482ede407de7000734d775",
+                "recvTime": "2023-11-06T00:10:06.083Z",
+                "attrName": "pressao",
+                "attrType": "str",
+                "attrValue": "98/60"            },
+            {
+                "_id": "65482ee4407de7000734d77b",
+                "recvTime": "2023-11-06T00:10:12.053Z",
+                "attrName": "pressao",
+                "attrType": "str",
+                "attrValue": "98/60"            },
+            {
+                "_id": "65482eea407de7000734d784",
+                "recvTime": "2023-11-06T00:10:18.086Z",
+                "attrName": "pressao",
+                "attrType": "str",
+                "attrValue": "98/60"            },
+            {
+                "_id": "65482ef0407de7000734d787",
+                "recvTime": "2023-11-06T00:10:24.101Z",
+                "attrName": "pressao",
+                "attrType": "str",
+                "attrValue": "100/66"            },
+            {
+                "_id": "65482ef6407de7000734d78d",
+                "recvTime": "2023-11-06T00:10:30.184Z",
+                "attrName": "pressao",
+                "attrType": "str",
+                "attrValue": "100/66"            },
+            {
+                "_id": "65482efc407de7000734d794",
+                "recvTime": "2023-11-06T00:10:36.189Z",
+                "attrName": "pressao",
+                "attrType": "str",
+                "attrValue": "100/66"            },
+            {
+                "_id": "65482f02407de7000734d79c",
+                "recvTime": "2023-11-06T00:10:42.230Z",
+                "attrName": "pressao",
+                "attrType": "str",
+                "attrValue": "105/69"            },
+            {
+                "_id": "65482f08407de7000734d7a0",
+                "recvTime": "2023-11-06T00:10:48.279Z",
+                "attrName": "pressao",
+                "attrType": "str",
+                "attrValue": "105/69"            },
+            {
+                "_id": "65482f0e407de7000734d7a8",
+                "recvTime": "2023-11-06T00:10:54.312Z",
+                "attrName": "pressao",
+                "attrType": "str",
+                "attrValue": "105/69"            },
+            {
+                "_id": "65482f14407de7000734d7ae",
+                "recvTime": "2023-11-06T00:11:00.270Z",
+                "attrName": "pressao",
+                "attrType": "str",
+                "attrValue": "105/69"            },
+            {
+                "_id": "65482f1a407de7000734d7b1",
+                "recvTime": "2023-11-06T00:11:06.289Z",
+                "attrName": "pressao",
+                "attrType": "str",
+                "attrValue": "105/69"            },
+            {
+                "_id": "65482f20407de7000734d7b9",
+                "recvTime": "2023-11-06T00:11:12.349Z",
+                "attrName": "pressao",
+                "attrType": "str",
+                "attrValue": "99/60"            },
+            {
+                "_id": "65482f26407de7000734d7be",
+                "recvTime": "2023-11-06T00:11:18.393Z",
+                "attrName": "pressao",
+                "attrType": "str",
+                "attrValue": "98/60"            },
+            {
+                "_id": "65482f2c407de7000734d7c4",
+                "recvTime": "2023-11-06T00:11:24.426Z",
+                "attrName": "pressao",
+                "attrType": "str",
+                "attrValue": "98/60"            },
+            {
+                "_id": "65482f32407de7000734d7cc",
+                "recvTime": "2023-11-06T00:11:30.474Z",
+                "attrName": "pressao",
+                "attrType": "str",
+                "attrValue": "98/60"            },
+            {
+                "_id": "65482f38407de7000734d7cf",
+                "recvTime": "2023-11-06T00:11:36.506Z",
+                "attrName": "pressao",
+                "attrType": "str",
+                "attrValue": "98/60"            },
+            {
+                "_id": "65482f3e407de7000734d7d7",
+                "recvTime": "2023-11-06T00:11:42.549Z",
+                "attrName": "pressao",
+                "attrType": "str",
+                "attrValue": "110/70"            },
+            {
+                "_id": "65482f44407de7000734d7da",
+                "recvTime": "2023-11-06T00:11:48.500Z",
+                "attrName": "pressao",
+                "attrType": "str",
+                "attrValue": "110/70"            },
+            {
+                "_id": "65482f4a407de7000734d7e2",
+                "recvTime": "2023-11-06T00:11:54.520Z",
+                "attrName": "pressao",
+                "attrType": "str",
+                "attrValue": "110/70"            },
+            {
+                "_id": "65482f50407de7000734d7e8",
+                "recvTime": "2023-11-06T00:12:00.574Z",
+                "attrName": "pressao",
+                "attrType": "str",
+                "attrValue": "110/70"            },
+            {
+                "_id": "65482f56407de7000734d7ee",
+                "recvTime": "2023-11-06T00:12:06.616Z",
+                "attrName": "pressao",
+                "attrType": "str",
+                "attrValue": "110/70"            },
+            {
+                "_id": "65482f5c407de7000734d7f4",
+                "recvTime": "2023-11-06T00:12:12.678Z",
+                "attrName": "pressao",
+                "attrType": "str",
+                "attrValue": "115/73"            },
+            {
+                "_id": "65482f62407de7000734d7f9",
+                "recvTime": "2023-11-06T00:12:18.693Z",
+                "attrName": "pressao",
+                "attrType": "str",
+                "attrValue": "115/73"            },
+            {
+                "_id": "65482f68407de7000734d800",
+                "recvTime": "2023-11-06T00:12:24.743Z",
+                "attrName": "pressao",
+                "attrType": "str",
+                "attrValue": "115/73"            },
+            {
+                "_id": "65482f6e407de7000734d808",
+                "recvTime": "2023-11-06T00:12:30.786Z",
+                "attrName": "pressao",
+                "attrType": "str",
+                "attrValue": "115/73"            },
+            {
+                "_id": "65482f74407de7000734d80a",
+                "recvTime": "2023-11-06T00:12:36.716Z",
+                "attrName": "pressao",
+                "attrType": "str",
+                "attrValue": "115/73"            },
+            {
+                "_id": "65482f7a407de7000734d813",
+                "recvTime": "2023-11-06T00:12:42.855Z",
+                "attrName": "pressao",
+                "attrType": "str",
+                "attrValue": "115/73"            },
+            {
+                "_id": "65482f80407de7000734d818",
+                "recvTime": "2023-11-06T00:12:48.800Z",
+                "attrName": "pressao",
+                "attrType": "str",
+                "attrValue": "108/69"            },
+            {
+                "_id": "65482f86407de7000734d81e",
+                "recvTime": "2023-11-06T00:12:54.852Z",
+                "attrName": "pressao",
+                "attrType": "str",
+                "attrValue": "108/69"            },
+            {
+                "_id": "65482f8c407de7000734d824",
+                "recvTime": "2023-11-06T00:13:00.932Z",
+                "attrName": "pressao",
+                "attrType": "str",
+                "attrValue": "108/69"            },
+            {
+                "_id": "65482f92407de7000734d828",
+                "recvTime": "2023-11-06T00:13:06.929Z",
+                "attrName": "pressao",
+                "attrType": "str",
+                "attrValue": "108/69"            },
+            {
+                "_id": "65482f99407de7000734d830",
+                "recvTime": "2023-11-06T00:13:12.978Z",
+                "attrName": "pressao",
+                "attrType": "str",
+                "attrValue": "100/64"            },
+            {
+                "_id": "65482f9f407de7000734d835",
+                "recvTime": "2023-11-06T00:13:19.024Z",
+                "attrName": "pressao",
+                "attrType": "str",
+                "attrValue": "100/64"            },
+            {
+                "_id": "65482fa4407de7000734d83c",
+                "recvTime": "2023-11-06T00:13:24.953Z",
+                "attrName": "pressao",
+                "attrType": "str",
+                "attrValue": "100/64"            },
+            {
+                "_id": "65482fab407de7000734d840",
+                "recvTime": "2023-11-06T00:13:31.099Z",
+                "attrName": "pressao",
+                "attrType": "str",
+                "attrValue": "100/64"            },
+            {
+                "_id": "65482fb1407de7000734d849",
+                "recvTime": "2023-11-06T00:13:37.046Z",
+                "attrName": "pressao",
+                "attrType": "str",
+                "attrValue": "100/68"            },
+            {
+                "_id": "65482fb7407de7000734d84e",
+                "recvTime": "2023-11-06T00:13:43.066Z",
+                "attrName": "pressao",
+                "attrType": "str",
+                "attrValue": "100/68"            },
+            {
+                "_id": "65482fbd407de7000734d856",
+                "recvTime": "2023-11-06T00:13:49.117Z",
+                "attrName": "pressao",
+                "attrType": "str",
+                "attrValue": "100/68"            },
+            {
+                "_id": "65482fc3407de7000734d85a",
+                "recvTime": "2023-11-06T00:13:55.148Z",
+                "attrName": "pressao",
+                "attrType": "str",
+                "attrValue": "98/60"            },
+            {
+                "_id": "65482fc9407de7000734d85f",
+                "recvTime": "2023-11-06T00:14:01.194Z",
+                "attrName": "pressao",
+                "attrType": "str",
+                "attrValue": "98/60"            },
+            {
+                "_id": "65482fcf407de7000734d865",
+                "recvTime": "2023-11-06T00:14:07.241Z",
+                "attrName": "pressao",
+                "attrType": "str",
+                "attrValue": "98/60"            },
+            {
+                "_id": "65482fd5407de7000734d86b",
+                "recvTime": "2023-11-06T00:14:13.178Z",
+                "attrName": "pressao",
+                "attrType": "str",
+                "attrValue": "98/60"            },
+            {
+                "_id": "65482fdb407de7000734d873",
+                "recvTime": "2023-11-06T00:14:19.319Z",
+                "attrName": "pressao",
+                "attrType": "str",
+                "attrValue": "98/60"            },
+            {
+                "_id": "65482fe1407de7000734d879",
+                "recvTime": "2023-11-06T00:14:25.256Z",
+                "attrName": "pressao",
+                "attrType": "str",
+                "attrValue": "98/60"            },
+            {
+                "_id": "65482fe7407de7000734d87e",
+                "recvTime": "2023-11-06T00:14:31.303Z",
+                "attrName": "pressao",
+                "attrType": "str",
+                "attrValue": "98/60"            },
+            {
+                "_id": "65482fed407de7000734d885",
+                "recvTime": "2023-11-06T00:14:37.397Z",
+                "attrName": "pressao",
+                "attrType": "str",
+                "attrValue": "98/60"            }
+        ]
+    }
+]
+

@@ -1,15 +1,29 @@
 from datetime import datetime
+from datetime import timedelta, date
 import time
 import json
 import os
+import random
 
 CADASTRO_JSON = 'cadastro.json'
-DASHBOARD_JSON = 'dashboard.json'
+DASHBOARD_JSON = 'monitoramento.json'
 DUVIDAS_JSON = 'duvidas.json'
 
 lista = []
 lista_cadastro = []
 dicionario = {}
+
+def aleatorio_data():
+    datainicial = date(2023,12,30)
+    dia = datainicial + timedelta(random.randint(1, 365))
+    dia  = str(dia)
+    day = '{}/{}/{}'.format(dia[8:], dia[5:7], dia[0:4])
+    # day = dia.strftime('%d/%m/%Y')
+    return day
+def aleatorio_nome_agendamento():
+    agendamentos = ["Otorrinolaringologista", "Dentista", "Cardiograma", "Oftalmologista"]
+    randomagendamento = random.choice(agendamentos)
+    return randomagendamento
 
 def formatar_data_hora(recv_time):
     # Converte o formato de tempo do JSON para o formato desejado
@@ -60,181 +74,201 @@ def menu_NovaVita2():
                         print(f'\033[33mSeja bem vindo(a) {dic["nome"]}!\033[m\n')
             print('1 - Ver a última atualização do Soul')
             print('2 - Ver monitoramento')
-            print('3 - Suporte especializado - dúvidas e perguntas')
-            print('4 - Mostrar todas as operações realizadas')
-            print('5 - Log-out\n')
+            print('3 - Ver agendamentos')
+            print('4 - Desmarcar agendamento')
+            print('5 - Suporte especializado - dúvidas e perguntas')
+            print('6 - Mostrar todas as operações realizadas')
+            print('7 - Log-out\n')
             print('----------------------------------------------\n')
 
             escolha_menu2 = input("Escolha uma dessas duas opções: ")
-        
-            match int(escolha_menu2):
-                case 1: 
-                    print("\n\033[34múltima atualização dos componentes eletrônicos da Soul:\033[m") 
-                    print("                    --                      ") 
-                    print("Placa DOIT ESP32 (Bluetooth e Wifi)")
-                    print("Sensor de oxigenação do sangue")
-                    print("Sensor de glucose do sangue")
-                    print("Sensor de monitoramento de frequência cardíaca e pressão arterial por infravermelho")
-                    print("Sensor de Temperatura da pele (DeRoyal)")
-                    print("                    --                      \n")
-                    lista.append('Ver a última atualização dos componentes eletrônicos da Soul')
-                case 2:
-                    print('----------------------------------------------')
-                    print('                  \033[34mNovaVita\033[m                ')
-                    print('----------------------------------------------\n')
-                    print("Escolha o sensor que deseja visualizar:")
-                    print()
-                    print("1 - Temperatura corporal")
-                    print("2 - Oxigenação do sangue")
-                    print("3 - Glucose no sangue")
-                    print("4 - Frequencia cardíaca")
-                    print("5 - Pressão arterial")
-                    print()
-                    try:
-                        escolha_sensor = int(input("Escolha o sensor (1-5): "))
-                        quantidade_leituras = int(input("Digite a quantidade de leituras desejada (max: 50): "))
-                    except ValueError:
-                        print()
-                        print("\033[31mOpção inválida. Por favor, insira um número válido.\033[m")
-                        print()
-                        continue
-                    
-                    if escolha_sensor < 1 or escolha_sensor > 5:
-                        print()
-                        print("\033[31mSensor inválido. Por favor, escolha uma opção de sensor válida.\033[m")
-                        print()
-                        continue
-                    
-                    if quantidade_leituras > 50:
-                        print()
-                        print("\033[31mA quantidade de leituras não pode ser maior que 50.\033[m")
-                        print()
-                        continue
-                    
-                    with open(DASHBOARD_JSON, 'r', encoding='utf-8') as arquivo:
-                        dados = json.load(arquivo)
-                        
-                        for sensor_data in dados:
-                            sensor_name = sensor_data['name']
-                            sensor_values = sensor_data['values']
-                            
-                            if escolha_sensor == 1 and sensor_name != 'temperature':
-                                continue
-                            elif escolha_sensor == 2 and sensor_name != 'oxigenacao':
-                                continue
-                            elif escolha_sensor == 3 and sensor_name != 'glucose':
-                                continue
-                            elif escolha_sensor == 4 and sensor_name != 'frequencia':
-                                continue
-                            elif escolha_sensor == 5 and sensor_name != 'pressao':
-                                continue
-
-                            sensor_nome_dash = sensor_name
-                            unidade_sensor = ""
-                            
-                            if sensor_name == 'temperature':
-                                sensor_nome_dash = "Temperatura Corporal"
-                                unidade_sensor = "°C"
-                            elif sensor_name == 'oxigenacao':
-                                sensor_nome_dash = "Oxigenação Sanguinea"
-                                unidade_sensor = "%"
-                            elif sensor_name == 'glucose':
-                                sensor_nome_dash = "Glucose no sangue"
-                                unidade_sensor = "mg/dL"
-                            elif sensor_name == 'frequencia':
-                                sensor_nome_dash = "Frequencia Cardíaca"
-                                unidade_sensor = "bpm"
-                            elif sensor_name == 'pressao':
-                                sensor_nome_dash = "Pressão Arterial"
-                                unidade_sensor = "mmHg"
-
-                            print()
-                            print(f"\033[34mÚltimas {quantidade_leituras} leituras de {sensor_nome_dash}:\033[m")
-                            print()
-                            
-                            for value in sensor_values[-quantidade_leituras:]:
-                                valores = value['attrValue']
-                                data_hora = value['recvTime']
-                                data_hora_formatados = datetime.strptime(data_hora, "%Y-%m-%dT%H:%M:%S.%fZ").strftime("%d/%m/%Y, %H:%M:%S")
-                                print(f"{valores} {unidade_sensor} - {data_hora_formatados}")
-                                print()
-                        lista.append('Ver monitoramento')
-                case 3:
-                    if os.path.exists(DUVIDAS_JSON):
-                        with open(DUVIDAS_JSON, 'r', encoding='utf-8') as arquivoduvidas:
-                            duvidas_existente = json.load(arquivoduvidas)
-                    else:
-                        duvidas_existente = []
-                    for i in range(5):
-                        i = "."
-                        print(i)
-                    num = None
-                    while num is None:
-                        try:
-                            num = int(input("Digite a quantidade de dúvidas (0 para sair): "))
-                            if num == 0:
-                                print('\nAgradecemos pela colaboração.\n')
-                                lista.append("Suporte especializado - Não teve nenhuma dúvida")
-                                break
-                            elif num < 1:
-                                print("\n\033[31mPor favor, insira um número positivo.\033[m")
-                                num = None
-                            else:
-                                contador = 0
-                                while contador < num:
-                                    duvida = input(f"Escreva sua {contador + 1}ª dúvida ao lado: ")
-                                    print()
-                                    print(f"{duvida}\n")
-                                    contador += 1
-                                    duivida_input = {f'Duvida {contador}': duvida}
-
-                                    duvidas_existente.append(duivida_input)
-                                    with open(DUVIDAS_JSON, 'w', encoding='utf-8') as arquivoduvidas:
-                                        json.dump(duvidas_existente, arquivoduvidas, indent=4, ensure_ascii=False)
-                                
-                                print("\nAgradecemos pelas dúvidas. Elas serão analisadas e retornadas em breve no seu e-mail...\n")
-                                lista.append("Suporte especializado - Teve dúvida")
-                        except ValueError:
-                            print("Digite um número inteiro válido.")
-                        print()
-                case 4:
-                    try:
-                        print()
-                        resposta = input("Deseja ver o resumo de operações realizadas do menu? (sim/não): ").lower()
-                        print()
-                        if resposta.isdigit():
-                            raise ValueError
-                        elif resposta == "não" or resposta == "n" or resposta == "nao":
-                            print("Obrigado por utilizar o programa!")   
-                        elif resposta == "sim" or resposta == "s":
-                            print("Resumo das operações realizadas:")
-                            print()
-                            for n in lista:
-                                print(f"\033[34m{n}\033[m")
-                            lista.append("Mostrar todas as operações realizadas")
-                        print()
-                        
-                        resposta2 = input("Deseja continuar? (sim/não): ").lower()
-                        print() 
-                        if resposta2.isdigit():
-                            raise ValueError
-                        elif resposta2 == "não" or resposta2 == "n" or resposta2 == "nao":
-                            print(f'\033[33mObrigado pela compreensão! Te esperamos em breve novamente!\033[m\n')
-                            for dic in dados_cliente:
-                                if dic['e-mail'] == email:
-                                    print(f'\033[33mObrigado por usar nossos serviços {dic["nome"]}!\033[m\n')
-                            return True
-                    except ValueError:
-                        print('\033[31mDigite apenas sim ou não!\033[m\n')  
-                case 5:
-                    for dic in dados_cliente:
-                        if dic['e-mail'] == email:
-                            print(f'\n\033[33mObrigado por usar nossos serviços {dic["nome"]}!\033[m\n')
-                    return True
-                case _:
-                    print("\n\033[31mError!! Número inválido!\033[m \n")
         except ValueError:
-            print("\n\033[31mDigite um número inteiro!\033[m\n")                
+            print("\n\033[31mDigite um número inteiro!\033[m\n")   
+        
+        match int(escolha_menu2):
+            case 1: 
+                print("\n\033[34múltima atualização dos componentes eletrônicos da Soul:\033[m") 
+                print("                    --                      ") 
+                print("Placa DOIT ESP32 (Bluetooth e Wifi)")
+                print("Sensor de oxigenação do sangue")
+                print("Sensor de glucose do sangue")
+                print("Sensor de monitoramento de frequência cardíaca e pressão arterial por infravermelho")
+                print("Sensor de Temperatura da pele (DeRoyal)")
+                print("                    --                      \n")
+                lista.append('Ver a última atualização dos componentes eletrônicos da Soul')
+            case 2:
+                print('----------------------------------------------')
+                print('                  \033[34mNovaVita\033[m                ')
+                print('----------------------------------------------\n')
+                print("Escolha o sensor que deseja visualizar:")
+                print()
+                print("1 - Temperatura corporal")
+                print("2 - Oxigenação do sangue")
+                print("3 - Glucose no sangue")
+                print("4 - Frequencia cardíaca")
+                print("5 - Pressão arterial")
+                print()
+                try:
+                    escolha_sensor = int(input("Escolha o sensor (1-5): "))
+                    quantidade_leituras = int(input("Digite a quantidade de leituras desejada (max: 50): "))
+                except ValueError:
+                    print()
+                    print("\033[31mOpção inválida. Por favor, insira um número válido.\033[m")
+                    print()
+                    continue
+                
+                if escolha_sensor < 1 or escolha_sensor > 5:
+                    print()
+                    print("\033[31mSensor inválido. Por favor, escolha uma opção de sensor válida.\033[m")
+                    print()
+                    continue
+                
+                if quantidade_leituras > 50:
+                    print()
+                    print("\033[31mA quantidade de leituras não pode ser maior que 50.\033[m")
+                    print()
+                    continue
+                
+                with open(DASHBOARD_JSON, 'r', encoding='utf-8') as arquivo:
+                    dados = json.load(arquivo)
+                    
+                    for sensor_data in dados:
+                        sensor_name = sensor_data['name']
+                        sensor_values = sensor_data['values']
+                        
+                        if escolha_sensor == 1 and sensor_name != 'temperature':
+                            continue
+                        elif escolha_sensor == 2 and sensor_name != 'oxigenacao':
+                            continue
+                        elif escolha_sensor == 3 and sensor_name != 'glucose':
+                            continue
+                        elif escolha_sensor == 4 and sensor_name != 'frequencia':
+                            continue
+                        elif escolha_sensor == 5 and sensor_name != 'pressao':
+                            continue
+
+                        sensor_nome_dash = sensor_name
+                        unidade_sensor = ""
+                        
+                        if sensor_name == 'temperature':
+                            sensor_nome_dash = "Temperatura Corporal"
+                            unidade_sensor = "°C"
+                        elif sensor_name == 'oxigenacao':
+                            sensor_nome_dash = "Oxigenação Sanguinea"
+                            unidade_sensor = "%"
+                        elif sensor_name == 'glucose':
+                            sensor_nome_dash = "Glucose no sangue"
+                            unidade_sensor = "mg/dL"
+                        elif sensor_name == 'frequencia':
+                            sensor_nome_dash = "Frequencia Cardíaca"
+                            unidade_sensor = "bpm"
+                        elif sensor_name == 'pressao':
+                            sensor_nome_dash = "Pressão Arterial"
+                            unidade_sensor = "mmHg"
+
+                        print()
+                        print(f"\033[34mÚltimas {quantidade_leituras} leituras de {sensor_nome_dash}:\033[m")
+                        print()
+                        
+                        for value in sensor_values[-quantidade_leituras:]:
+                            valores = value['attrValue']
+                            data_hora = value['recvTime']
+                            data_hora_formatados = datetime.strptime(data_hora, "%Y-%m-%dT%H:%M:%S.%fZ").strftime("%d/%m/%Y, %H:%M:%S")
+                            print(f"{valores} {unidade_sensor} - {data_hora_formatados}")
+                            print()
+                    lista.append('Ver monitoramento')
+            case 3:
+                for datas in dados_cliente:
+                    if datas["e-mail"] == email:
+                        print(f'\n{datas["agendamentos"]}\n')
+            case 4:
+                if os.path.exists(CADASTRO_JSON) and dados_cliente:
+                    for datas in dados_cliente:
+                        if datas["e-mail"] == email:
+                            print(f'\n{datas["agendamentos"]}\n')
+                    nome_agendamento = int(input('Digite o número de qual você quer desmarcar(0 - ultimo): '))
+                    for datas in dados_cliente:
+                        if datas["e-mail"] == email:
+                            datas["agendamentos"].pop(nome_agendamento)
+                            print('Desmarcamento concluido com sucesso!')
+                            with open(CADASTRO_JSON, 'w', encoding='utf-8') as arquivo:
+                                json.dump(dados_cliente, arquivo, indent=4, ensure_ascii=False)
+                else:
+                    print('Não existe agendamentos!')
+            case 5:
+                if os.path.exists(DUVIDAS_JSON):
+                    with open(DUVIDAS_JSON, 'r', encoding='utf-8') as arquivoduvidas:
+                        duvidas_existente = json.load(arquivoduvidas)
+                else:
+                    duvidas_existente = []
+                    print("." * 5)
+                num = None
+                while num is None:
+                    try:
+                        num = int(input("Digite a quantidade de dúvidas (0 para sair): "))
+                        if num == 0:
+                            print('\nAgradecemos pela colaboração.\n')
+                            lista.append("Suporte especializado - Não teve nenhuma dúvida")
+                            break
+                        elif num < 1:
+                            print("\n\033[31mPor favor, insira um número positivo.\033[m")
+                            num = None
+                        else:
+                            contador = 0
+                            
+                            id = len(duvidas_existente)
+                            while contador < num:
+                                duvida = input(f"Escreva sua {contador + 1}ª dúvida ao lado: ")
+                                print()
+                                print(f"{duvida}\n")
+                                contador += 1
+                                id += 1
+                                duvida_input = {'Id': id,'Duvida': duvida}
+                                duvidas_existente.append(duvida_input)
+                                with open(DUVIDAS_JSON, 'w', encoding='utf-8') as arquivoduvidas:
+                                    json.dump(duvidas_existente, arquivoduvidas, indent=4, ensure_ascii=False)
+                            
+                            print("\nAgradecemos pelas dúvidas. Elas serão analisadas e retornadas em breve no seu e-mail...\n")
+                            lista.append("Suporte especializado - Teve dúvida")
+                    except ValueError:
+                        print("\nDigite um número inteiro válido.")
+                    print()
+            case 6:
+                try:
+                    print()
+                    resposta = input("Deseja ver o resumo de operações realizadas do menu? (sim/não): ").lower()
+                    print()
+                    if resposta.isdigit():
+                        raise ValueError
+                    elif resposta == "não" or resposta == "n" or resposta == "nao":
+                        print("Obrigado por utilizar o programa!")   
+                    elif resposta == "sim" or resposta == "s":
+                        print("Resumo das operações realizadas:")
+                        print()
+                        for n in lista:
+                            print(f"\033[34m{n}\033[m")
+                        lista.append("Mostrar todas as operações realizadas")
+                    print()
+                    
+                    resposta2 = input("Deseja continuar? (sim/não): ").lower()
+                    print() 
+                    if resposta2.isdigit():
+                        raise ValueError
+                    elif resposta2 == "não" or resposta2 == "n" or resposta2 == "nao":
+                        print(f'\033[33mObrigado pela compreensão! Te esperamos em breve novamente!\033[m\n')
+                        for dic in dados_cliente:
+                            if dic['e-mail'] == email:
+                                print(f'\033[33mObrigado por usar nossos serviços {dic["nome"]}!\033[m\n')
+                        return True
+                except ValueError:
+                    print('\033[31mDigite apenas sim ou não!\033[m\n')  
+            case 7:
+                for dic in dados_cliente:
+                    if dic['e-mail'] == email:
+                        print(f'\n\033[33mObrigado por usar nossos serviços {dic["nome"]}!\033[m\n')
+                return True
+            case _:             
+                print("\n\033[31mError!! Número inválido!\033[m \n")
 
 while True:
     escolha_menu1 = menu_NovaVita1() 
@@ -292,7 +326,7 @@ while True:
                 if email_existente == True:
                     print("\n\033[31mEste email já está cadastrado! Tente com um email diferente.\033[m\n")
                 else:
-                    cadastro = {'nome': nome, 'e-mail': email, 'senha': senha}
+                    cadastro = {'nome': nome, 'e-mail': email, 'senha': senha, 'agendamentos': [str(aleatorio_data()) + " " + aleatorio_nome_agendamento(), str(aleatorio_data()) + " " + aleatorio_nome_agendamento(), str(aleatorio_data()) + " " + aleatorio_nome_agendamento()]}
                     lista_cadastro.append(cadastro)
                     print('\n\033[32mCadastro realizado com sucesso!\033[m\n')
                     lista.append("Cadastro no site do NovaVita")

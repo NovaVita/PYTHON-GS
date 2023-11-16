@@ -1,12 +1,30 @@
 [
     {
-        "nome": "rony",
-        "e-mail": "rony@gmail,.com",
-        "senha": "12345678"
-    },
-    {
         "nome": "a",
         "e-mail": "a@gmail.com",
-        "senha": "12345678"
+        "senha": "12345678",
+        "agendamentos": [
+            "30/10/2023 Dentista"
+        ]
+    },
+    {
+        "nome": "g",
+        "e-mail": "g@gmail.com",
+        "senha": "12345678",
+        "agendamentos": [
+            "12/01/2024 Otorrinolaringologista",
+            "11/01/2024 Oftalmologista",
+            "04/01/2024 Oftalmologista"
+        ]
+    },
+    {
+        "nome": "d",
+        "e-mail": "d@gmail.com",
+        "senha": "12345678",
+        "agendamentos": [
+            "16/10/2024 Dentista",
+            "01/05/2024 Otorrinolaringologista",
+            "22/03/2024 Cardiograma"
+        ]
     }
 ]
