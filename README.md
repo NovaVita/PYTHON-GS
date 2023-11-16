@@ -4,13 +4,13 @@
 
 ---
 
-## **Quem Somos:**
+## **Quem Somos**
 
 A NovaVita é mais do que uma startup; somos uma comunidade comprometida em transformar a saúde por meio da inovação tecnológica. Nossa missão é facilitar e aprimorar a qualidade de vida das pessoas, oferecendo soluções intuitivas que otimizam agendamento médico e monitoramento de pacientes crônicos.
 
 ---
 
-## **Principais Projetos:**
+## **Principais Projetos**
 
 1. **NovaVita:** Nosso aplicativo revolucionário simplifica o tratamento médico do paciente, além de realizar de maneira automática o agendamento da consulta médica para o usuário, proporcionando uma experiência fluida e eficiente para profissionais de saúde e pacientes.
 
@@ -18,13 +18,13 @@ A NovaVita é mais do que uma startup; somos uma comunidade comprometida em tran
 
 ---
 
-## **Arquétipo do Inocente/Idealista:**
+## **Arquétipo do Inocente/Idealista**
 
 Nosso desenvolvimento é guiado pelo arquétipo do Inocente/Idealista. Acreditamos na pureza, confiança, e na busca por uma vida saudável. Cada linha de código reflete nossa paixão em criar um mundo mais saudável e acessível.
 
 ---
 
-## **Features Implementadas:**
+## **Features Implementadas**
 * Menu de Cadastro, login, Remoção de cadastro e Encerramento;
 * Menu para o usuario logado, com atualizações de hardware do Soul, ultimas leituras dos sensores, suporte para dúvidas e Log-out;
 * Criação de cadastro;
@@ -33,7 +33,7 @@ Nosso desenvolvimento é guiado pelo arquétipo do Inocente/Idealista. Acreditam
 * Dashboard.
 ---
 
-## **Configuração:**
+## **Configuração**
 
 1. Certifique-se de ter o python instalado em seu sistema antes de começar. Caso ainda não tenha, você pode baixá-lo [aqui](https://www.python.org/downloads/).
 2. Baixe a pasta do repositório.
@@ -44,7 +44,7 @@ Agora você está pronto para explorar o programa. Divirta-se!
 
 ---
 
-## **Time:**
+## **Time**
 
 |       Aluno       |     Rm     |   Turma   |
 | ----------------- | ---------- | --------- |
@@ -53,18 +53,19 @@ Agora você está pronto para explorar o programa. Divirta-se!
 
 ---
 
-## **Conecte-se Conosco:**
+## **Conecte-se Conosco**
 
 Siga-nos para ficar atualizado sobre nossas inovações em saúde e tecnologia. Faça parte da comunidade NovaVita, onde a inovação, qualidade de vida e otimismo convergem para um futuro mais saudável.
 
-**LinkedIn:**
+### **LinkedIn**
 
 * [Rony Ken Nagai](https://www.linkedin.com/in/rony-nagai)
 * [Tomáz Versolato Carballo](https://www.linkedin.com/in/tomazcarballo/)
 
 ---
 
-## **Como Contribuir:**
+## **Como Contribuir**
+
 - 🌐 Explore nossos projetos.
 - 🐛 Relate problemas ou sugira melhorias.
 - 🤝 Junte-se a nós na missão de transformar a saúde.
