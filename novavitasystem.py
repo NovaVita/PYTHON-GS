@@ -22,7 +22,7 @@ def aleatorio_data():
     # day = dia.strftime('%d/%m/%Y')
     return day
 def aleatorio_nome_agendamento():
-    agendamentos = ["Otorrinolaringologista", "Dentista", "Cardiograma", "Oftalmologista"]
+    agendamentos = ["Otorrinolaringologista", "Dentista", "Cardiograma", "Oftalmologista" "Cardiologia","Dermatologia","Ginecologia e Obstetrícia","Ortopedia","Anestesiologia","Pediatria","Psiquiatria","Urologia","Oncologia","Endocrinologia","Neurologia","Hematologia","Cirurgia Plástica"]
     randomagendamento = random.choice(agendamentos)
     return randomagendamento
 
