@@ -63,29 +63,36 @@ def validar_senha(senha):
 
 def menu_NovaVita2():
     while True:
-        try:
-            with open(CADASTRO_JSON, 'r', encoding='utf-8') as arquivo:
-                dados_cliente = json.load(arquivo)
-            print('----------------------------------------------')
-            print('                  \033[34mNovaVita\033[m                ')
-            print('----------------------------------------------\n')
-            for dic in dados_cliente:
-                    if dic['e-mail'] == email:
-                        print(f'\033[33mSeja bem vindo(a) {dic["nome"]}!\033[m\n')
-            print('1 - Ver a última atualização do Soul')
-            print('2 - Ver monitoramento')
-            print('3 - Ver agendamentos')
-            print('4 - Desmarcar agendamento')
-            print('5 - Suporte especializado - dúvidas e perguntas')
-            print('6 - Mostrar todas as operações realizadas')
-            print('7 - Log-out\n')
-            print('----------------------------------------------\n')
+        with open(CADASTRO_JSON, 'r', encoding='utf-8') as arquivo:
+            dados_cliente = json.load(arquivo)
+        print('----------------------------------------------')
+        print('                  \033[34mNovaVita\033[m                ')
+        print('----------------------------------------------\n')
+        for dic in dados_cliente:
+                if dic['e-mail'] == email:
+                    print(f'\033[33mSeja bem vindo(a) {dic["nome"]}!\033[m\n')
+        print('1 - Ver a última atualização do Soul')
+        print('2 - Ver monitoramento')
+        print('3 - Ver agendamentos')
+        print('4 - Adicionar agendamento')
+        print('5 - Desmarcar agendamento')
+        print('6 - Suporte especializado - dúvidas e perguntas')
+        print('7 - Mostrar todas as operações realizadas')
+        print('8 - Log-out\n')
+        print('----------------------------------------------\n')
 
-            escolha_menu2 = input("Escolha uma dessas duas opções: ")
+        try:
+            escolha_menu2_input = input("Escolha uma dessas opções: ")
+            escolha_menu2 = int(escolha_menu2_input)
+            if not escolha_menu2_input.isdigit():
+                raise ValueError
+            else:
+                continue
         except ValueError:
-            print("\n\033[31mDigite um número inteiro!\033[m\n")   
-        
-        match int(escolha_menu2):
+            print("\n\033[31mDigite um número inteiro válido entre 1 e 8!\033[m\n")
+        except UnboundLocalError:
+            print("\n\033[31minteiro válido entre 1 e 8!\033[m\n")
+        match escolha_menu2:
             case 1: 
                 print("\n\033[34múltima atualização dos componentes eletrônicos da Soul:\033[m") 
                 print("                    --                      ") 
@@ -178,24 +185,65 @@ def menu_NovaVita2():
                             print()
                     lista.append('Ver monitoramento')
             case 3:
-                for datas in dados_cliente:
-                    if datas["e-mail"] == email:
-                        print(f'\n{datas["agendamentos"]}\n')
+                if os.path.exists(CADASTRO_JSON) and dados_cliente:
+                    for datas in dados_cliente:
+                        if datas["e-mail"] == email:
+                            if datas["agendamentos"]:
+                                print('\n\033[34mSeus agendamentos:\033[m\n')
+                                for agendamento in datas["agendamentos"]:
+                                    print(agendamento)
+                                print()
+                            else:
+                                print('\n\033[31mNão existem agendamentos!\033[m\n')
+                else:
+                    print('\033[31mNão existe nenhum cadastro no banco de dados!\033[m\n')
             case 4:
                 if os.path.exists(CADASTRO_JSON) and dados_cliente:
                     for datas in dados_cliente:
                         if datas["e-mail"] == email:
-                            print(f'\n{datas["agendamentos"]}\n')
-                    nome_agendamento = int(input('Digite o número de qual você quer desmarcar(0 - ultimo): '))
-                    for datas in dados_cliente:
-                        if datas["e-mail"] == email:
-                            datas["agendamentos"].pop(nome_agendamento)
-                            print('Desmarcamento concluido com sucesso!')
+                            try:
+                                nova_data = input("Digite a data do novo agendamento (formato DD/MM/YYYY): ")
+                                datetime.strptime(nova_data, "%d/%m/%Y")  # Check if the input can be converted to datetime
+                            except ValueError:
+                                print('\n\033[31mFormato de data inválido! Use o formato DD/MM/YYYY.\033[m\n')
+                                break  # Exit the loop if the date format is invalid
+
+                            novo_nome_agendamento = input("Digite o nome do novo agendamento: ")
+                            
+                            novo_agendamento = f'{nova_data} {novo_nome_agendamento}'
+                            datas["agendamentos"].append(novo_agendamento)
+                            
+                            print(f'\n\033[32mNovo agendamento adicionado: {novo_agendamento}\033[m\n')
+                            
                             with open(CADASTRO_JSON, 'w', encoding='utf-8') as arquivo:
                                 json.dump(dados_cliente, arquivo, indent=4, ensure_ascii=False)
                 else:
-                    print('Não existe agendamentos!')
+                    print('\033[31mNão existe nenhum cadastro no banco de dados!\033[m\n')
             case 5:
+                if os.path.exists(CADASTRO_JSON) and dados_cliente:
+                    for datas in dados_cliente:
+                        if datas["e-mail"] == email:
+                            print('\nSeus agendamentos:')
+                            for i, agendamento in enumerate(datas["agendamentos"]):
+                                print(f'\n{i} - {agendamento}')
+                            print()
+
+                            try:
+                                nome_agendamento = int(input('Digite o número do agendamento que deseja desmarcar (0 - último): '))
+
+                                if 0 <= nome_agendamento < len(datas["agendamentos"]):
+                                    agendamento_desmarcado = datas["agendamentos"].pop(nome_agendamento)
+                                    print(f'\nDesmarcando o seguinte agendamento: {agendamento_desmarcado}')
+                                    print('\n\033[32mDesmarcamento concluído com sucesso!\033[m\n')
+                                    with open(CADASTRO_JSON, 'w', encoding='utf-8') as arquivo:
+                                        json.dump(dados_cliente, arquivo, indent=4, ensure_ascii=False)
+                                else:
+                                    print('\n\033[31mPor favor, digite um valor válido!\033[m\n')
+                            except ValueError:
+                                print('\n\033[31mPor favor, digite um número válido!\033[m\n')
+                else:
+                    print('Não existem agendamentos!')
+            case 6:
                 if os.path.exists(DUVIDAS_JSON):
                     with open(DUVIDAS_JSON, 'r', encoding='utf-8') as arquivoduvidas:
                         duvidas_existente = json.load(arquivoduvidas)
@@ -233,7 +281,7 @@ def menu_NovaVita2():
                     except ValueError:
                         print("\nDigite um número inteiro válido.")
                     print()
-            case 6:
+            case 7:
                 try:
                     print()
                     resposta = input("Deseja ver o resumo de operações realizadas do menu? (sim/não): ").lower()
@@ -262,7 +310,7 @@ def menu_NovaVita2():
                         return True
                 except ValueError:
                     print('\033[31mDigite apenas sim ou não!\033[m\n')  
-            case 7:
+            case 8:
                 for dic in dados_cliente:
                     if dic['e-mail'] == email:
                         print(f'\n\033[33mObrigado por usar nossos serviços {dic["nome"]}!\033[m\n')
