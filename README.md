@@ -38,7 +38,7 @@ A NovaVita se compromete a impactar positivamente vidas, oferecendo uma abordage
 
 ---
 
-## **Solução**
+## **Solução / Diferencial**
 
 A NovaVita se propõe a revolucionar a prestação de cuidados de saúde, abordando as lacunas existentes na gestão de condições médicas e promovendo uma abordagem mais holística e orientada para o paciente. A solução proposta envolve dois elementos principais: o aplicativo NovaVita e o dispositivo de monitoramento Soul.
 
