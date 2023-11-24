@@ -61,6 +61,12 @@ O Soul é um dispositivo de monitoramento de saúde que se integra perfeitamente
 
 ---
 
+## **Vídeo**
+
+Você pode assistir ao vídeo mostrando o dispositivo clicando [aqui](https://www.youtube.com/watch?v=HR_2h_O06r4&t=1s&ab_channel=Tocomaz).
+
+---
+
 ## **Explicação Python**
 
 `Este repositório é a simulação em python da maioria das principais funções do aplicativo NovaVita.`
